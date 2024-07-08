@@ -1,9 +1,12 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Terms = () => {
   return (
-    <div>
-      Terms & conditions
+    <div className='container'>
+      <div>
+        <Image />
+      </div>
     </div>
   )
 }

@@ -1,9 +1,12 @@
+import Image from 'next/image'
 import React from 'react'
 
 const ReturnPolicy = () => {
   return (
-    <div>
-      Return Policy
+    <div className='container'>
+      <div>
+        <Image />
+      </div>
     </div>
   )
 }
