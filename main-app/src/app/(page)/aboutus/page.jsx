@@ -1,11 +1,15 @@
+import Image from 'next/image'
 import React from 'react'
+import AboutUsBanner from '../../../../public/AboutUsBanner.png'
 
-const page = () => {
+const AboutUs = () => {
   return (
-    <div>
-      Hello World!
+    <div className='container'>
+      <div>
+        <Image src={AboutUsBanner} alt='About us Banner' priority />
+      </div>
     </div>
   )
 }
 
-export default page
+export default AboutUs

@@ -1,10 +1,11 @@
+import StaticDropDown from "@/components/StaticDropDown";
 
 
 export default function PageLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        Hello
+        <StaticDropDown />
         {children}
       </body>
     </html>
