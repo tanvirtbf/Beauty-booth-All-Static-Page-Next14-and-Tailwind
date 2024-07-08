@@ -1,7 +1,6 @@
-"use client"
-import StaticDropDown from "@/components/StaticDropDown";
+"use client";
+import OwnDropDown from "@/components/OwnDropDown";
 import { useEffect, useState } from "react";
-
 
 export default function PageLayout({ children }) {
   const [width, setWidth] = useState(window.innerWidth);
@@ -13,11 +12,11 @@ export default function PageLayout({ children }) {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-  console.log(width)
+  console.log(width);
   return (
     <html lang="en">
       <body>
-        <StaticDropDown />
+        <OwnDropDown />
         {children}
       </body>
     </html>
