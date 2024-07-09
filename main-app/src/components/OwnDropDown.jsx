@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const OwnDropDown = ({ selected, setSelected }) => {
   const [isClick, setIsClick] = useState(false);
-  const options = ["React", "Vue", "Angular", "Next"];
+  const options = ["About Us", "Privacy Policies", "Terms & Conditions", "Return & Refund Policy","Contact Us","Career","FAQ"];
   return (
     <div className="container">
       <div className="dropdown">
