@@ -13,10 +13,12 @@ export default function PageLayout({ children }) {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   console.log(width);
+
+  const [selected,setSelected] = useState('Choose One')
   return (
     <html lang="en">
       <body>
-        <OwnDropDown />
+        <OwnDropDown selected={selected} setSelected={setSelected}/>
         {children}
       </body>
     </html>
