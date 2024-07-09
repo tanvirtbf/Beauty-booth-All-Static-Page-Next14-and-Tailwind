@@ -5,7 +5,7 @@ const OwnDropDown = ({ selected, setSelected }) => {
   const [isClick, setIsClick] = useState(false);
   const options = ["About Us", "Privacy Policies", "Terms & Conditions", "Return & Refund Policy","Contact Us","Career","FAQ"];
   return (
-    <div className="container">
+    <div className="container sm:hidden">
       <div className="dropdown">
         <div className="dropdown-btn" onClick={(e) => setIsClick(!isClick)}>
           {selected}

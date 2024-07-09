@@ -14,11 +14,11 @@ export default function PageLayout({ children }) {
   }, []);
   console.log(width);
 
-  const [selected,setSelected] = useState('Choose One')
+  const [selected, setSelected] = useState("Choose One");
   return (
     <html lang="en">
       <body>
-        <OwnDropDown selected={selected} setSelected={setSelected}/>
+        <OwnDropDown selected={selected} setSelected={setSelected} />
         {children}
       </body>
     </html>
