@@ -3,14 +3,14 @@ import React from 'react'
 
 const DesktopDropDown = () => {
   return (
-    <div className='w-56'>
-      <div>
+    <div className='w-[17%]'>
+      <div className='desktop-dropdown'>
         <Link href={"/aboutus"}>About Us</Link>
       </div>
-      <div>
+      <div className='desktop-dropdown'>
         <Link href={"/privacypolicy"}>Privacy Policies</Link>
       </div>
-      <div>
+      <div className='desktop-dropdown'>
         <Link href={"/terms"}>Terms & Conditions</Link>
       </div>
       <div>
