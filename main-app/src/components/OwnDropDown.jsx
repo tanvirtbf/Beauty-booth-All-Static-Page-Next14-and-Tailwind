@@ -1,9 +1,18 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 
 const OwnDropDown = ({ selected, setSelected }) => {
   const [isClick, setIsClick] = useState(false);
-  const options = ["About Us", "Privacy Policies", "Terms & Conditions", "Return & Refund Policy","Contact Us","Career","FAQ"];
+  const options = [
+    {text:"About Us",href:"aboutus"},
+    {text:"Privacy Policies",href:"privacypolicy"},
+    {text:"Terms & Conditions",href:"terms"},
+    {text:"Return & Refund Policy",href:"returnpolicy"},
+    {text:"Contact Us",href:"/"},
+    {text:"Career",href:"/"},
+    {text:"FAQ",href:"/"},
+  ];
   return (
     <div className="container sm:hidden">
       <div className="dropdown">
@@ -12,15 +21,17 @@ const OwnDropDown = ({ selected, setSelected }) => {
         </div>
         {isClick && (
           <div className="dropdown-content">
-            {options.map((option) => (
-              <div
-                onClick={(e) => {
-                  setSelected(option)
-                  setIsClick(false)
-                }}
-                className="dropdown-item"
-              >
-                {option}
+            {options.map(({text,href}) => (
+              <div className="dropdown-item">
+                <Link
+                  href={`/${href}`}
+                  onClick={(e) => {
+                    setSelected(text);
+                    setIsClick(false);
+                  }}
+                >
+                  {text}
+                </Link>
               </div>
             ))}
           </div>
