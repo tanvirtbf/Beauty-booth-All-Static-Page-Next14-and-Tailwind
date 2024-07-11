@@ -5,13 +5,13 @@ import { useState } from "react";
 const OwnDropDown = ({ selected, setSelected }) => {
   const [isClick, setIsClick] = useState(false);
   const options = [
-    {text:"About Us",href:"aboutus"},
-    {text:"Privacy Policies",href:"privacypolicy"},
-    {text:"Terms & Conditions",href:"terms"},
-    {text:"Return & Refund Policy",href:"returnpolicy"},
-    {text:"Contact Us",href:"/"},
-    {text:"Career",href:"/"},
-    {text:"FAQ",href:"/"},
+    { text: "About Us", href: "aboutus" },
+    { text: "Privacy Policies", href: "privacypolicy" },
+    { text: "Terms & Conditions", href: "terms" },
+    { text: "Return & Refund Policy", href: "returnpolicy" },
+    { text: "Contact Us", href: "/" },
+    { text: "Career", href: "/" },
+    { text: "FAQ", href: "/" },
   ];
   return (
     <div className="container sm:hidden">
@@ -21,7 +21,7 @@ const OwnDropDown = ({ selected, setSelected }) => {
         </div>
         {isClick && (
           <div className="dropdown-content">
-            {options.map(({text,href}) => (
+            {options.map(({ text, href }) => (
               <div className="dropdown-item">
                 <Link
                   href={`/${href}`}
