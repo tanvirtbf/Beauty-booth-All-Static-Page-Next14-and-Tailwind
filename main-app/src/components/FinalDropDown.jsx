@@ -61,35 +61,6 @@ const FinalDropDown = () => {
               <span>{text}</span>
             </Link>
           ))}
-
-        {/* <div className="text-sm w-full h-9 flex items-center dropgap">
-          <Image src={AboutusIcon} />
-          <span>About Us</span>
-        </div>
-        <div className="text-sm w-full h-9 flex items-center dropgap">
-          <Image src={PrivacyIcon} />
-          <span>Privacy Policy</span>
-        </div>
-        <div className="text-sm w-full h-9 flex items-center dropgap">
-          <Image src={TermsIcon} />
-          <span>Terms & Conditions</span>
-        </div>
-        <div className="text-sm w-full h-9 flex items-center dropgap">
-          <Image src={ReturnIcon} />
-          <span>Return & Refund Policy</span>
-        </div>
-        <div className="text-sm w-full h-9 flex items-center dropgap">
-          <Image src={ContactIcon} />
-          <span>Contact Us</span>
-        </div>
-        <div className="text-sm w-full h-9 flex items-center dropgap">
-          <Image src={CareerIcon} />
-          <span>Career</span>
-        </div>
-        <div className="text-sm w-full h-9 flex items-center dropgap">
-          <Image src={FaqIcon} />
-          <span>FAQ</span>
-        </div> */}
       </div>
     </div>
   );
