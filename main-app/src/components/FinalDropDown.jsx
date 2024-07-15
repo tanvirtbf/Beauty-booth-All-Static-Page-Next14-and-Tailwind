@@ -36,12 +36,10 @@ const FinalDropDown = () => {
     { id: 7, text: "FAQ", href: "/", icon: FaqIcon },
   ];
 
-  const handleClick = (e) => {
-    setIsClick(!isClick);
-  };
   const handleLinkClick = (id, text) => {
     setSelected(text);
     setDivId(id);
+    setIsClick(!isClick)
   };
   return (
     <div className="w-full sm:w-56 h-fit pt-1 px-0 pb-2 shadow-xx rounded-lg order-1 sm:order-2">
@@ -50,13 +48,11 @@ const FinalDropDown = () => {
           className={`absolute top-2 right-2 ${
             isClick ? "rotate-0" : "rotate-180"
           } cursor-pointer`}
-          onClick={handleClick}
+          onClick={()=> setIsClick(!isClick)}
         >
           <Image src={Arrow} alt={Arrow} />
         </div>
-        <div className="text-sm px-2 w-full h-9 flex items-center">{`${
-          isClick ? "Select" : selected
-        }`}</div>
+        <div className="text-sm px-2 w-full h-9 flex items-center">{`${isClick ? "Select" : selected}`}</div>
         {isClick &&
           options.map(({ id, text, href, icon }) => (
             <Link
