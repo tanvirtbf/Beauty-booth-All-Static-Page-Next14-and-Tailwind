@@ -47,7 +47,7 @@ const FinalDropDown = () => {
   ];
 
   return (
-    <div className="w-full sm:w-56 h-fit pt-1 px-0 pb-2 shadow-xx rounded-lg order-1 sm:order-2">
+    <div className="w-full sm:w-56 h-fit pt-1 px-0 pb-2 shadow-xx sm:shadow-none rounded-lg order-1 sm:order-2">
       <div className="w-full flex flex-col relative">
         <div
           className={`absolute top-2 right-2 ${
@@ -71,7 +71,7 @@ const FinalDropDown = () => {
                 }`}
               >
                 <Image src={icon} alt={icon} />
-                <span className="text-[#5A5A5A] text-sm font-normal">
+                <span className={`text-[#5A5A5A] text-sm font-normal`}>
                   {text}
                 </span>
               </Link>
