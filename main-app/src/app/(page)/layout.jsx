@@ -18,7 +18,7 @@ export default function PageLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <OwnDropDown selected={selected} setSelected={setSelected} />
+        {/* <OwnDropDown selected={selected} setSelected={setSelected} /> */}
         {children}
       </body>
     </html>

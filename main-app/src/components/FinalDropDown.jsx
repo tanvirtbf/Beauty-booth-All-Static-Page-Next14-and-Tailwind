@@ -16,7 +16,7 @@ const FinalDropDown = () => {
     setIsClick(!isClick);
   };
   return (
-    <div className="w-full sm:w-80 h-fit pt-1 px-0 pb-2 shadow-xx rounded-lg border">
+    <div className="w-full sm:w-56 h-fit pt-1 px-0 pb-2 shadow-xx rounded-lg border order-1 sm:order-2">
       <div className="w-full px-2 flex flex-col gap-2 relative">
         <div
           className={`absolute top-2 right-2 ${
@@ -27,7 +27,7 @@ const FinalDropDown = () => {
           <Image src={Arrow} />
         </div>
         <div className="text-sm w-full h-9 flex items-center">Select</div>
-        <div className={`${isClick?'block':'hidden'}`}>
+        <div className={`${isClick?'block':'hidden'} flex flex-col gap-2 `}>
           <div className="text-sm w-full h-9 flex items-center dropgap">
             <Image src={AboutusIcon} />
             <span>About Us</span>
