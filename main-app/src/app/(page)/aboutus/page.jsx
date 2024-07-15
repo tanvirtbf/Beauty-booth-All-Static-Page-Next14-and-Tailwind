@@ -1,6 +1,7 @@
 import DesktopDropDown from "@/components/DesktopDropDown";
 import Image from "next/image";
 import AboutUsBanner from "../../../../public/AboutUsBanner.png";
+import FinalDropDown from "@/components/FinalDropDown";
 
 const AboutUs = () => {
   return (
@@ -9,7 +10,7 @@ const AboutUs = () => {
         <Image src={AboutUsBanner} alt="About us Banner" priority />
       </div>
       <div className="w-full mt-10 mb-24 flex justify-between">
-        <DesktopDropDown />
+        <FinalDropDown />
         <div className="w-3/4">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
           sapiente nulla, ut voluptatem illo molestias voluptatibus, error,
