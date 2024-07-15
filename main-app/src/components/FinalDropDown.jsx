@@ -14,6 +14,7 @@ import Link from "next/link";
 
 const FinalDropDown = () => {
   const [divId, setDivId] = useState(0);
+  const [isPc,setIsPc] = useState(false)
   const [isClick, setIsClick] = useState(true);
   const [selected, setSelected] = useState("Select");
   console.log(isClick)
@@ -24,6 +25,7 @@ const FinalDropDown = () => {
       setIsClick(false)
     }
   },[])
+
   const options = [
     { id: 1, text: "About Us", href: "aboutus", icon: AboutusIcon },
     {
@@ -55,10 +57,10 @@ const FinalDropDown = () => {
         >
           <Image src={Arrow} alt={Arrow} />
         </div>
-        <div className="text-sm px-2 w-full h-9 flex items-center lg:hidden">{
+        <div className={`text-sm px-2 w-full h-9 flex items-center lg:hidden ${isClick ? 'mb-2': ''}`}>{
           options.find((opt)=> path.split('/')[1] == opt.href).text
         }</div>
-        <div>
+        <div className="flex flex-col gap-2">
           {isClick &&
             options.map(({ id, text, href, icon }) => (
               <Link
