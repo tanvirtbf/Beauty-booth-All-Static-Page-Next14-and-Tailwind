@@ -9,7 +9,7 @@ const AboutUs = () => {
       <div>
         <Image src={AboutUsBanner} alt="About us Banner" priority />
       </div>
-      <div className="w-full mt-10 mb-24 flex justify-between">
+      <div className="w-full mt-10 mb-24 flex gap-5 justify-between">
         <FinalDropDown />
         <div className="w-3/4">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
