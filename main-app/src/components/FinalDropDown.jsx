@@ -15,32 +15,39 @@ const FinalDropDown = () => {
   return (
     <div className='w-full sm:w-80 pt-1 px-0 pb-2 shadow-xx rounded-lg border'>
       <div className='w-full px-2 flex flex-col gap-2 relative'>
-        <div className={`absolute top-2 right-2 ${isClick ? 'rotate-0' : 'rotate-180'}`}>
+        <div className={`absolute top-2 right-2 ${isClick ? 'rotate-0' : 'rotate-180'} cursor-pointer`}>
           <Image src={Arrow}/>
         </div>
         <div className='text-sm border w-full h-9 flex items-center'>
           Select
         </div>
         <div className='text-sm border w-full h-9 flex items-center'>
-          About Us
+          <Image src={AboutusIcon}/>
+          <span>About Us</span>
         </div>
         <div className='text-sm border w-full h-9 flex items-center'>
-          Privacy Policy
+          <Image src={PrivacyIcon}/>
+          <span>Privacy Policy</span>
         </div>
         <div className='text-sm border w-full h-9 flex items-center'>
-          Terms & Conditions
+          <Image src={TermsIcon}/>
+          <span>Terms & Conditions</span>
         </div>
         <div className='text-sm border w-full h-9 flex items-center'>
-          Return & Refund Policy
+          <Image src={ReturnIcon}/>
+          <span>Return & Refund Policy</span>
         </div>
         <div className='text-sm border w-full h-9 flex items-center'>
-          Contact Us
+          <Image src={ContactIcon}/>
+          <span>Contact Us</span>
         </div>
         <div className='text-sm border w-full h-9 flex items-center'>
-          Career
+          <Image src={CareerIcon}/>
+          <span>Career</span>
         </div>
         <div className='text-sm border w-full h-9 flex items-center'>
-          FAQ
+          <Image src={FaqIcon}/>
+          <span>FAQ</span>
         </div>
       </div>
     </div>
