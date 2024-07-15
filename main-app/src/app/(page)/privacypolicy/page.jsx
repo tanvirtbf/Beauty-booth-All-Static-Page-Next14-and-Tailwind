@@ -1,13 +1,14 @@
 import FinalDropDown from "@/components/FinalDropDown";
 import Image from "next/image";
+import PrivacyPolicyBanner from "../../../../public/PrivacyPolicy.png";
 
 const PrivacyPolicies = () => {
   return (
     <div className="container">
       <div className="w-full flex flex-wrap justify-between">
         <div className="w-full order-2 sm:order-1 mt-7 mb-6">
-          <Image src={PrivacyPolicies} alt="Privacy Banner" priority />
-        </div>
+          <Image src={PrivacyPolicyBanner} alt="Privacy Banner" priority />
+        </div> 
         <FinalDropDown />
         <div className="w-full sm:w-3/4 order-3">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi

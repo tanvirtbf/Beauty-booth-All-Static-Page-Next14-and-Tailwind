@@ -16,13 +16,23 @@ const FinalDropDown = () => {
   const [selected, setSelected] = useState("Select");
 
   const options = [
-    { text: "About Us", href: "aboutus", icon: AboutusIcon },
-    { text: "Privacy Policies", href: "privacypolicy", icon: PrivacyIcon },
-    { text: "Terms & Conditions", href: "terms", icon: TermsIcon },
-    { text: "Return & Refund Policy", href: "returnpolicy", icon: ReturnIcon },
-    { text: "Contact Us", href: "/", icon: ContactIcon },
-    { text: "Career", href: "/", icon: CareerIcon },
-    { text: "FAQ", href: "/", icon: FaqIcon },
+    { id: 1, text: "About Us", href: "aboutus", icon: AboutusIcon },
+    {
+      id: 2,
+      text: "Privacy Policies",
+      href: "privacypolicy",
+      icon: PrivacyIcon,
+    },
+    { id: 3, text: "Terms & Conditions", href: "terms", icon: TermsIcon },
+    {
+      id: 4,
+      text: "Return & Refund Policy",
+      href: "returnpolicy",
+      icon: ReturnIcon,
+    },
+    { id: 5, text: "Contact Us", href: "/", icon: ContactIcon },
+    { id: 6, text: "Career", href: "/", icon: CareerIcon },
+    { id: 7, text: "FAQ", href: "/", icon: FaqIcon },
   ];
 
   const handleClick = (e) => {
@@ -41,16 +51,15 @@ const FinalDropDown = () => {
         </div>
         <div className="text-sm w-full h-9 flex items-center">{selected}</div>
         {isClick &&
-          options.map((option) => (
-            <div>
-              <Link
-                href={option.href}
-                className="text-sm w-full h-9 flex items-center dropgap"
-              >
-                <Image src={option.icon} />
-                <span>{option.text}</span>
-              </Link>
-            </div>
+          options.map(({ id, text, href, icon }) => (
+            <Link
+              key={id}
+              href={href}
+              className="text-sm w-full h-9 flex items-center dropgap"
+            >
+              <Image src={icon} />
+              <span>{text}</span>
+            </Link>
           ))}
 
         {/* <div className="text-sm w-full h-9 flex items-center dropgap">
