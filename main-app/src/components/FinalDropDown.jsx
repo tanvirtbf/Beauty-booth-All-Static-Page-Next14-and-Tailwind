@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import Arrow from "../../public/Arrow.png";
 import AboutusIcon from "../../public/aboutusIcon.png";
@@ -12,6 +13,18 @@ import TermsIcon from "../../public/termsIcon.png";
 
 const FinalDropDown = () => {
   const [isClick, setIsClick] = useState(true);
+  const [selected, setSelected] = useState("Select");
+
+  const options = [
+    { text: "About Us", href: "aboutus", icon: AboutusIcon },
+    { text: "Privacy Policies", href: "privacypolicy", icon: PrivacyIcon },
+    { text: "Terms & Conditions", href: "terms", icon: TermsIcon },
+    { text: "Return & Refund Policy", href: "returnpolicy", icon: ReturnIcon },
+    { text: "Contact Us", href: "/", icon: ContactIcon },
+    { text: "Career", href: "/", icon: CareerIcon },
+    { text: "FAQ", href: "/", icon: FaqIcon },
+  ];
+
   const handleClick = (e) => {
     setIsClick(!isClick);
   };
@@ -26,37 +39,48 @@ const FinalDropDown = () => {
         >
           <Image src={Arrow} />
         </div>
-        <div className="text-sm w-full h-9 flex items-center">Select</div>
-        <div className={`${isClick?'block':'hidden'} flex flex-col gap-2 `}>
-          <div className="text-sm w-full h-9 flex items-center dropgap">
-            <Image src={AboutusIcon} />
-            <span>About Us</span>
-          </div>
-          <div className="text-sm w-full h-9 flex items-center dropgap">
-            <Image src={PrivacyIcon} />
-            <span>Privacy Policy</span>
-          </div>
-          <div className="text-sm w-full h-9 flex items-center dropgap">
-            <Image src={TermsIcon} />
-            <span>Terms & Conditions</span>
-          </div>
-          <div className="text-sm w-full h-9 flex items-center dropgap">
-            <Image src={ReturnIcon} />
-            <span>Return & Refund Policy</span>
-          </div>
-          <div className="text-sm w-full h-9 flex items-center dropgap">
-            <Image src={ContactIcon} />
-            <span>Contact Us</span>
-          </div>
-          <div className="text-sm w-full h-9 flex items-center dropgap">
-            <Image src={CareerIcon} />
-            <span>Career</span>
-          </div>
-          <div className="text-sm w-full h-9 flex items-center dropgap">
-            <Image src={FaqIcon} />
-            <span>FAQ</span>
-          </div>
+        <div className="text-sm w-full h-9 flex items-center">{selected}</div>
+        {isClick &&
+          options.map((option) => (
+            <div>
+              <Link
+                href={option.href}
+                className="text-sm w-full h-9 flex items-center dropgap"
+              >
+                <Image src={option.icon} />
+                <span>{option.text}</span>
+              </Link>
+            </div>
+          ))}
+
+        {/* <div className="text-sm w-full h-9 flex items-center dropgap">
+          <Image src={AboutusIcon} />
+          <span>About Us</span>
         </div>
+        <div className="text-sm w-full h-9 flex items-center dropgap">
+          <Image src={PrivacyIcon} />
+          <span>Privacy Policy</span>
+        </div>
+        <div className="text-sm w-full h-9 flex items-center dropgap">
+          <Image src={TermsIcon} />
+          <span>Terms & Conditions</span>
+        </div>
+        <div className="text-sm w-full h-9 flex items-center dropgap">
+          <Image src={ReturnIcon} />
+          <span>Return & Refund Policy</span>
+        </div>
+        <div className="text-sm w-full h-9 flex items-center dropgap">
+          <Image src={ContactIcon} />
+          <span>Contact Us</span>
+        </div>
+        <div className="text-sm w-full h-9 flex items-center dropgap">
+          <Image src={CareerIcon} />
+          <span>Career</span>
+        </div>
+        <div className="text-sm w-full h-9 flex items-center dropgap">
+          <Image src={FaqIcon} />
+          <span>FAQ</span>
+        </div> */}
       </div>
     </div>
   );

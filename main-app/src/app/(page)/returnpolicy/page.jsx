@@ -1,16 +1,16 @@
-import DesktopDropDown from "@/components/DesktopDropDown";
 import Image from "next/image";
 import ReturnPolicyBanner from "../../../../public/ReturnPolicy.png";
+import FinalDropDown from "@/components/FinalDropDown";
 
 const ReturnPolicy = () => {
   return (
     <div className="container">
-      <div>
-        <Image src={ReturnPolicyBanner} alt="Return Policy Banner" priority />
-      </div>
-      <div className="w-full mt-10 mb-24 flex justify-between">
-        <DesktopDropDown />
-        <div className="w-3/4">
+      <div className="w-full flex flex-wrap justify-between">
+        <div className="w-full order-2 sm:order-1 mt-7 mb-6">
+          <Image src={ReturnPolicyBanner} alt="Return Banner" priority />
+        </div>
+        <FinalDropDown />
+        <div className="w-full sm:w-3/4 order-3">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
           sapiente nulla, ut voluptatem illo molestias voluptatibus, error,
           maiores rem aliquam nihil veritatis ipsa quaerat inventore maxime!

@@ -1,20 +1,15 @@
-import DesktopDropDown from "@/components/DesktopDropDown";
+import FinalDropDown from "@/components/FinalDropDown";
 import Image from "next/image";
-import PrivacyPolicyBanner from "../../../../public/PrivacyPolicy.png";
 
 const PrivacyPolicies = () => {
   return (
     <div className="container">
-      <div>
-        <Image
-          src={PrivacyPolicyBanner}
-          alt="PrivacyPolicies banner"
-          priority
-        />
-      </div>
-      <div className="w-full mt-10 mb-24 flex justify-between">
-        <DesktopDropDown />
-        <div className="w-3/4">
+      <div className="w-full flex flex-wrap justify-between">
+        <div className="w-full order-2 sm:order-1 mt-7 mb-6">
+          <Image src={PrivacyPolicies} alt="Privacy Banner" priority />
+        </div>
+        <FinalDropDown />
+        <div className="w-full sm:w-3/4 order-3">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
           sapiente nulla, ut voluptatem illo molestias voluptatibus, error,
           maiores rem aliquam nihil veritatis ipsa quaerat inventore maxime!
@@ -26,11 +21,11 @@ const PrivacyPolicies = () => {
           beatae suscipit alias incidunt eum iste cum nisi dignissimos quae. In
           dolore nemo repellendus, adipisci aliquid eveniet et obcaecati, odit
           eligendi rerum eius. Itaque blanditiis expedita accusantium
-          consectetur eius voluptate vero, libero aspernatur nesciunt eaque.
-          Aliquid doloribus provident aut voluptatum ratione nobis placeat
-          veniam, ad eveniet possimus nemo voluptates nihil iste natus suscipit
-          explicabo rem praesentium ipsam impedit esse ex ullam dolorem quo
-          quia. Ducimus sint nulla repudiandae eum, error fugiat illum porro
+          consectetur eius nulla voluptate vero, libero aspernatur nesciunt
+          eaque. Aliquid doloribus provident aut voluptatum ratione nobis
+          placeat veniam, ad eveniet possimus nemo voluptates nihil iste natus
+          suscipit explicabo rem praesentium ipsam impedit esse ex ullam dolorem
+          quo quia. Ducimus sint nulla repudiandae eum, error fugiat illum porro
           aspernatur quasi asperiores accusamus iusto fuga doloremque ex magni
           tenetur saepe delectus assumenda! Nulla accusamus dolor quis eum
           voluptatibus eveniet vel tenetur iure nihil beatae quidem consequatur
