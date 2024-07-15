@@ -57,7 +57,7 @@ const FinalDropDown = () => {
         >
           <Image src={Arrow} alt={Arrow} />
         </div>
-        <div className={`text-sm px-2 w-full h-9 flex items-center lg:hidden ${isClick ? 'mb-2': ''}`}>{
+        <div className={`text-sm font-normal text-[#5A5A5A] px-2 w-full h-9 flex items-center lg:hidden ${isClick ? 'mb-2': ''}`}>{
           options.find((opt)=> path.split('/')[1] == opt.href).text
         }</div>
         <div className="flex flex-col gap-2">
