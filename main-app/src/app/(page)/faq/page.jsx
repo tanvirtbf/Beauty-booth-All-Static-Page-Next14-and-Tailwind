@@ -6,7 +6,8 @@ import FaqWebBanner from "../../../../public/faqWebBanner.png";
 import UserCircle from "../../../../public/user-cirlce-add 1.png";
 
 const Faq = () => {
-  const [isClick, setIsClick] = useState(false);
+  const [isClick, setIsClick] = useState(1);
+  console.log(isClick)
   const data = [
     {
       id: 1,
@@ -45,8 +46,9 @@ const Faq = () => {
           <div className="grid gap-3 sm:gap-6 grid-cols-12">
             {data.map(({ id, text }) => (
               <div
+                onClick={()=> setIsClick(id)}
                 key={id}
-                className="px-5 py-6 rounded-lg border border-[#ECECEE] sm:col-span-4 col-span-6 flex gap-4 justify-start items-center"
+                className={`px-5 py-6 rounded-lg border ${isClick===id ? 'border-black' : 'border-[#ECECEE]'} sm:col-span-4 col-span-6 flex gap-4 justify-start items-center cursor-pointer`}
               >
                 <Image src={UserCircle} alt={text} priority />
                 <p className="text-xs sm:text-sm font-normal text-[#222222]">
