@@ -8,7 +8,10 @@ import UserCircle from "../../../../public/user-cirlce-add 1.png";
 
 const Faq = () => {
   const [isClick, setIsClick] = useState(1);
-  console.log(isClick);
+  const [AccordianClick,setAccordianClick] = useState({
+    whichContext : isClick,
+    whichQuestion : 1,
+  })
   const data = [
     {
       id: 1,
