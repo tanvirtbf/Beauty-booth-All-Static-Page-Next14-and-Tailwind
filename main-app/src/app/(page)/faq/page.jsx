@@ -12,6 +12,7 @@ const Faq = () => {
     whichContext : isClick,
     whichQuestion : 1,
   })
+  console.log(AccordianClick)
   const data = [
     {
       id: 1,
@@ -152,7 +153,13 @@ const Faq = () => {
           <div className="grid gap-3 sm:gap-6 grid-cols-12">
             {data.map(({ id, text }) => (
               <div
-                onClick={() => setIsClick(id)}
+                onClick={() => {
+                  setIsClick(id);
+                  setAccordianClick((prevState)=>({
+                    ...prevState,
+                    whichContext:id
+                  }))
+                }}
                 key={id}
                 className={`px-5 py-6 rounded-lg border ${
                   isClick === id ? "border-black" : "border-[#ECECEE]"
@@ -183,11 +190,14 @@ const Faq = () => {
                       <h3 className="font-normal text-sm sm:text-base text-black">
                         {ques}
                       </h3>
-                      <div className="w-8 h-8 flex justify-center items-center bg-[#F6F8FA] rounded-full cursor-pointer">
+                      <div onClick={()=>{
+                        setAccordianClick({whichContext:id,whichQuestion:q_id});
+                        console.log('hii')
+                      }} className="w-8 h-8 flex justify-center items-center bg-[#F6F8FA] rounded-full cursor-pointer">
                         <Image src={Plus} />
                       </div>
                     </div>
-                    <div className="font-normal text-xs sm:text-sm text-[#5A5A5A]">
+                    <div className={`font-normal text-xs sm:text-sm text-[#5A5A5A] ${AccordianClick.whichContext === id && AccordianClick.whichQuestion === q_id ? 'block' : 'hidden'}`}>
                       {desc}
                     </div>
                     <div className="w-full h-[1px] bg-[#ECECEE]"></div>
