@@ -15,17 +15,17 @@ const Faq = () => {
       text: "New Visitor",
       question: [
         {
-          id: 1,
+          q_id: 1,
           ques: "What Is A Newsletter?",
           desc: "If you want to get updated about the latest products, promotions and sales, you may subscribe to our newsletter. You will find the newsletter at the bottom of our website. Enter your email address to get notifications. Beauty Booth Newsletters are free and will be sent to your designated email address. Please add our domain addresses (info@beautyboothqa.com) to your allowed list of senders, to ensure receipt of our emails.",
         },
         {
-          id: 2,
+          q_id: 2,
           ques: "How do I register to be a Beauty Booth member?",
           desc: "If you want to get updated about the latest products, promotions and sales, you may subscribe to our newsletter. You will find the newsletter at the bottom of our website. Enter your email address to get notifications. Beauty Booth Newsletters are free and will be sent to your designated email address. Please add our domain addresses (info@beautyboothqa.com) to your allowed list of senders, to ensure receipt of our emails.",
         },
         {
-          id: 3,
+          q_id: 3,
           ques: "Why Should I Register?",
           desc: "If you want to get updated about the latest products, promotions and sales, you may subscribe to our newsletter. You will find the newsletter at the bottom of our website. Enter your email address to get notifications. Beauty Booth Newsletters are free and will be sent to your designated email address. Please add our domain addresses (info@beautyboothqa.com) to your allowed list of senders, to ensure receipt of our emails.",
         },
@@ -36,17 +36,17 @@ const Faq = () => {
       text: "Account & Payment",
       question: [
         {
-          id: 1,
+          q_id: 1,
           ques: "What Is A Newsletter?",
           desc: "If you want to get updated about the latest products, promotions and sales, you may subscribe to our newsletter. You will find the newsletter at the bottom of our website. Enter your email address to get notifications. Beauty Booth Newsletters are free and will be sent to your designated email address. Please add our domain addresses (info@beautyboothqa.com) to your allowed list of senders, to ensure receipt of our emails.",
         },
         {
-          id: 2,
+          q_id: 2,
           ques: "How do I register to be a Beauty Booth member?",
           desc: "If you want to get updated about the latest products, promotions and sales, you may subscribe to our newsletter. You will find the newsletter at the bottom of our website. Enter your email address to get notifications. Beauty Booth Newsletters are free and will be sent to your designated email address. Please add our domain addresses (info@beautyboothqa.com) to your allowed list of senders, to ensure receipt of our emails.",
         },
         {
-          id: 3,
+          q_id: 3,
           ques: "Why Should I Register?",
           desc: "If you want to get updated about the latest products, promotions and sales, you may subscribe to our newsletter. You will find the newsletter at the bottom of our website. Enter your email address to get notifications. Beauty Booth Newsletters are free and will be sent to your designated email address. Please add our domain addresses (info@beautyboothqa.com) to your allowed list of senders, to ensure receipt of our emails.",
         },
@@ -57,17 +57,17 @@ const Faq = () => {
       text: "Delivery & Return",
       question: [
         {
-          id: 1,
+          q_id: 1,
           ques: "What Is A Newsletter?",
           desc: "If you want to get updated about the latest products, promotions and sales, you may subscribe to our newsletter. You will find the newsletter at the bottom of our website. Enter your email address to get notifications. Beauty Booth Newsletters are free and will be sent to your designated email address. Please add our domain addresses (info@beautyboothqa.com) to your allowed list of senders, to ensure receipt of our emails.",
         },
         {
-          id: 2,
+          q_id: 2,
           ques: "How do I register to be a Beauty Booth member?",
           desc: "If you want to get updated about the latest products, promotions and sales, you may subscribe to our newsletter. You will find the newsletter at the bottom of our website. Enter your email address to get notifications. Beauty Booth Newsletters are free and will be sent to your designated email address. Please add our domain addresses (info@beautyboothqa.com) to your allowed list of senders, to ensure receipt of our emails.",
         },
         {
-          id: 3,
+          q_id: 3,
           ques: "Why Should I Register?",
           desc: "If you want to get updated about the latest products, promotions and sales, you may subscribe to our newsletter. You will find the newsletter at the bottom of our website. Enter your email address to get notifications. Beauty Booth Newsletters are free and will be sent to your designated email address. Please add our domain addresses (info@beautyboothqa.com) to your allowed list of senders, to ensure receipt of our emails.",
         },
@@ -78,17 +78,17 @@ const Faq = () => {
       text: "Guest Checkout",
       question: [
         {
-          id: 1,
+          q_id: 1,
           ques: "What Is A Newsletter?",
           desc: "If you want to get updated about the latest products, promotions and sales, you may subscribe to our newsletter. You will find the newsletter at the bottom of our website. Enter your email address to get notifications. Beauty Booth Newsletters are free and will be sent to your designated email address. Please add our domain addresses (info@beautyboothqa.com) to your allowed list of senders, to ensure receipt of our emails.",
         },
         {
-          id: 2,
+          q_id: 2,
           ques: "How do I register to be a Beauty Booth member?",
           desc: "If you want to get updated about the latest products, promotions and sales, you may subscribe to our newsletter. You will find the newsletter at the bottom of our website. Enter your email address to get notifications. Beauty Booth Newsletters are free and will be sent to your designated email address. Please add our domain addresses (info@beautyboothqa.com) to your allowed list of senders, to ensure receipt of our emails.",
         },
         {
-          id: 3,
+          q_id: 3,
           ques: "Why Should I Register?",
           desc: "If you want to get updated about the latest products, promotions and sales, you may subscribe to our newsletter. You will find the newsletter at the bottom of our website. Enter your email address to get notifications. Beauty Booth Newsletters are free and will be sent to your designated email address. Please add our domain addresses (info@beautyboothqa.com) to your allowed list of senders, to ensure receipt of our emails.",
         },
@@ -99,17 +99,17 @@ const Faq = () => {
       text: "Shopping",
       question: [
         {
-          id: 1,
+          q_id: 1,
           ques: "What Is A Newsletter?",
           desc: "If you want to get updated about the latest products, promotions and sales, you may subscribe to our newsletter. You will find the newsletter at the bottom of our website. Enter your email address to get notifications. Beauty Booth Newsletters are free and will be sent to your designated email address. Please add our domain addresses (info@beautyboothqa.com) to your allowed list of senders, to ensure receipt of our emails.",
         },
         {
-          id: 2,
+          q_id: 2,
           ques: "How do I register to be a Beauty Booth member?",
           desc: "If you want to get updated about the latest products, promotions and sales, you may subscribe to our newsletter. You will find the newsletter at the bottom of our website. Enter your email address to get notifications. Beauty Booth Newsletters are free and will be sent to your designated email address. Please add our domain addresses (info@beautyboothqa.com) to your allowed list of senders, to ensure receipt of our emails.",
         },
         {
-          id: 3,
+          q_id: 3,
           ques: "Why Should I Register?",
           desc: "If you want to get updated about the latest products, promotions and sales, you may subscribe to our newsletter. You will find the newsletter at the bottom of our website. Enter your email address to get notifications. Beauty Booth Newsletters are free and will be sent to your designated email address. Please add our domain addresses (info@beautyboothqa.com) to your allowed list of senders, to ensure receipt of our emails.",
         },
@@ -120,17 +120,17 @@ const Faq = () => {
       text: "Promotions & Freebies",
       question: [
         {
-          id: 1,
+          q_id: 1,
           ques: "What Is A Newsletter?",
           desc: "If you want to get updated about the latest products, promotions and sales, you may subscribe to our newsletter. You will find the newsletter at the bottom of our website. Enter your email address to get notifications. Beauty Booth Newsletters are free and will be sent to your designated email address. Please add our domain addresses (info@beautyboothqa.com) to your allowed list of senders, to ensure receipt of our emails.",
         },
         {
-          id: 2,
+          q_id: 2,
           ques: "How do I register to be a Beauty Booth member?",
           desc: "If you want to get updated about the latest products, promotions and sales, you may subscribe to our newsletter. You will find the newsletter at the bottom of our website. Enter your email address to get notifications. Beauty Booth Newsletters are free and will be sent to your designated email address. Please add our domain addresses (info@beautyboothqa.com) to your allowed list of senders, to ensure receipt of our emails.",
         },
         {
-          id: 3,
+          q_id: 3,
           ques: "Why Should I Register?",
           desc: "If you want to get updated about the latest products, promotions and sales, you may subscribe to our newsletter. You will find the newsletter at the bottom of our website. Enter your email address to get notifications. Beauty Booth Newsletters are free and will be sent to your designated email address. Please add our domain addresses (info@beautyboothqa.com) to your allowed list of senders, to ensure receipt of our emails.",
         },
@@ -167,34 +167,31 @@ const Faq = () => {
             ))}
           </div>
           <div>
-            <div className="TOTAL-QUESTION w-full">
-              <div className="HEADING pt-9 pb-4 px-3">
-                <h2 className="text-lg sm:text-2xl font-bold text-black">
-                  New Visitor
-                </h2>
-              </div>
-              <div className="QUESTION flex flex-col gap-3 px-3 py-5">
-                <div className="flex justify-between items-center">
-                  <h3 className="font-normal text-sm sm:text-base text-black">
-                    What Is A Newsletter?
-                  </h3>
-                  <div className="w-8 h-8 flex justify-center items-center bg-[#F6F8FA] rounded-full cursor-pointer">
-                    <Image src={Plus} />
+            {data.map(({ id, text, question }) => (
+              <div key={id} className="TOTAL-QUESTION w-full">
+                <div className="HEADING pt-9 pb-4 px-3">
+                  <h2 className="text-lg sm:text-2xl font-bold text-black">
+                    {text}
+                  </h2>
+                </div>
+                {question.map(({q_id,ques,desc}) => (
+                  <div key={q_id} className="QUESTION flex flex-col gap-3 px-3 py-5">
+                    <div className="flex justify-between items-center">
+                      <h3 className="font-normal text-sm sm:text-base text-black">
+                        {ques}
+                      </h3>
+                      <div className="w-8 h-8 flex justify-center items-center bg-[#F6F8FA] rounded-full cursor-pointer">
+                        <Image src={Plus} />
+                      </div>
+                    </div>
+                    <div className="font-normal text-xs sm:text-sm text-[#5A5A5A]">
+                      {desc}
+                    </div>
+                    <div className="w-full h-[1px] bg-[#ECECEE]"></div>
                   </div>
-                </div>
-                <div className="font-normal text-xs sm:text-sm text-[#5A5A5A]">
-                  If you want to get updated about the latest products,
-                  promotions and sales, you may subscribe to our newsletter. You
-                  will find the newsletter at the bottom of our website. Enter
-                  your email address to get notifications. Beauty Booth
-                  Newsletters are free and will be sent to your designated email
-                  address. Please add our domain addresses
-                  (info@beautyboothqa.com) to your allowed list of senders, to
-                  ensure receipt of our emails.
-                </div>
-                <div className="w-full h-[1px] bg-[#ECECEE]"></div>
+                ))}
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
