@@ -17,9 +17,10 @@ const FinalDropDown = () => {
   const [isPc,setIsPc] = useState(false)
   const [isClick, setIsClick] = useState(true);
   const [selected, setSelected] = useState("Select");
-  console.log(isClick)
+  // console.log(isClick)
   let router = useRouter();
   let path = usePathname();
+  console.log(path)
   useEffect(()=>{
     if(window.innerWidth < 991){
       setIsClick(false)
@@ -41,9 +42,9 @@ const FinalDropDown = () => {
       href: "returnpolicy",
       icon: ReturnIcon,
     },
-    { id: 5, text: "Contact Us", href: "/", icon: ContactIcon },
-    { id: 6, text: "Career", href: "/", icon: CareerIcon },
-    { id: 7, text: "FAQ", href: "/", icon: FaqIcon },
+    { id: 5, text: "Contact Us", href: "contactus", icon: ContactIcon },
+    { id: 6, text: "Career", href: "career", icon: CareerIcon },
+    { id: 7, text: "FAQ", href: "faq", icon: FaqIcon },
   ];
 
   return (

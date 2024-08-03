@@ -1,5 +1,7 @@
 import Image from "next/image";
 import FaqWebBanner from "../../../../public/faqWebBanner.png";
+import FinalDropDown from "@/components/FinalDropDown";
+
 
 const Faq = () => {
   return (
@@ -9,6 +11,7 @@ const Faq = () => {
           <h1 className="staticHeading">Frequently Asked Questions</h1>
           <Image src={FaqWebBanner} alt="faq Banner" priority />
         </div>
+        <FinalDropDown />
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ export default function PageLayout({ children }) {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-  console.log(width);
+  // console.log(width);
 
   const [selected, setSelected] = useState("Choose One");
   return (
