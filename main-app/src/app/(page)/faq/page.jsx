@@ -51,7 +51,7 @@ const Faq = () => {
                 className={`px-5 py-6 rounded-lg border ${isClick===id ? 'border-black' : 'border-[#ECECEE]'} sm:col-span-4 col-span-6 flex gap-4 justify-start items-center cursor-pointer`}
               >
                 <Image src={UserCircle} alt={text} priority />
-                <p className="text-xs sm:text-sm font-normal text-[#222222]">
+                <p className={`text-xs sm:text-sm ${isClick===id ? 'font-medium' : 'font-normal'} text-[#222222]`}>
                   {text}
                 </p>
               </div>
