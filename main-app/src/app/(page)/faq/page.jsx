@@ -1,7 +1,6 @@
+import FinalDropDown from "@/components/FinalDropDown";
 import Image from "next/image";
 import FaqWebBanner from "../../../../public/faqWebBanner.png";
-import FinalDropDown from "@/components/FinalDropDown";
-
 
 const Faq = () => {
   return (
@@ -12,6 +11,13 @@ const Faq = () => {
           <Image src={FaqWebBanner} alt="faq Banner" priority />
         </div>
         <FinalDropDown />
+        <div className="w-full sm:w-3/4 order-3">
+          <div className="grid gap-4 grid-cols-12">
+            <div>
+              
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
