@@ -12,8 +12,8 @@ const Faq = () => {
   const [AccordianClick,setAccordianClick] = useState({
     whichContext : isClick,
     whichQuestion : 1,
+    plusOrMinus : false,
   })
-  const [iconChange,setIconChange] = useState(false)
   console.log(AccordianClick)
   const data = [
     {
@@ -193,8 +193,7 @@ const Faq = () => {
                         {ques}
                       </h3>
                       <div onClick={()=>{
-                        setAccordianClick({whichContext:id,whichQuestion:q_id});
-                        setIconChange(!iconChange)
+                        setAccordianClick({whichContext:id,whichQuestion:q_id,plusOrMinus:true});
                       }} className="w-8 h-8 flex justify-center items-center bg-[#F6F8FA] rounded-full cursor-pointer">
                         <Image src={Plus} />
                       </div>
