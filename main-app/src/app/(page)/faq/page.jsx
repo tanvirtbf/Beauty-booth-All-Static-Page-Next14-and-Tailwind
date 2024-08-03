@@ -3,6 +3,7 @@ import FinalDropDown from "@/components/FinalDropDown";
 import Image from "next/image";
 import { useState } from "react";
 import Plus from "../../../../public/AccordianPlus.svg";
+import Minus from '../../../../public/AccordianMinus.svg'
 import FaqWebBanner from "../../../../public/faqWebBanner.png";
 import UserCircle from "../../../../public/user-cirlce-add 1.png";
 
@@ -12,6 +13,7 @@ const Faq = () => {
     whichContext : isClick,
     whichQuestion : 1,
   })
+  const [iconChange,setIconChange] = useState(false)
   console.log(AccordianClick)
   const data = [
     {
@@ -192,7 +194,7 @@ const Faq = () => {
                       </h3>
                       <div onClick={()=>{
                         setAccordianClick({whichContext:id,whichQuestion:q_id});
-                        console.log('hii')
+                        setIconChange(!iconChange)
                       }} className="w-8 h-8 flex justify-center items-center bg-[#F6F8FA] rounded-full cursor-pointer">
                         <Image src={Plus} />
                       </div>
