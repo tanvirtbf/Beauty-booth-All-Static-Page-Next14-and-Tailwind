@@ -34,8 +34,8 @@ const Contactus = () => {
           <div className="w-full grid grid-cols-12 gap-3 sm:gap-5">
             <div className="grid col-span-12 sm:col-span-4">
               <div className="flex gap-4 sm:gap-5 border border-[#DDDDDD] rounded-lg sm:rounded-xl px-5 sm:px-8 py-4 sm:py-6">
-                <div className="icon">
-                  <Image src={WebMobileIcon} alt="Web Mobile Icon" className="hidden sm:block"/>
+                <div>
+                  <Image src={WebMobileIcon} alt="Web Mobile Icon" className="hidden sm:block w-12"/>
                   <Image src={MobileMobileIcon} alt="Mobile Mobile Icon" className="block sm:hidden"/>
                 </div>
                 <div className="flex flex-col gap-2 sm:gap-3">
@@ -46,25 +46,25 @@ const Contactus = () => {
             </div>
             <div className="grid col-span-12 sm:col-span-4">
               <div className="flex gap-4 sm:gap-5 border border-[#DDDDDD] rounded-lg sm:rounded-xl px-5 sm:px-8 py-4 sm:py-6">
-                <div className="icon">
-                  <Image src={WebWhatsappIcon} alt="Web Whatsapp Icon" className="hidden sm:block"/>
+                <div>
+                  <Image src={WebWhatsappIcon} alt="Web Whatsapp Icon" className="hidden sm:block w-12"/>
                   <Image src={MobileWhatsappIcon} alt="Mobile Whatsapp Icon" className="block sm:hidden"/>
                 </div>
                 <div className="flex flex-col gap-2 sm:gap-3">
-                  <h3 className="font-medium text-sm sm:text-base text-black">Call Us</h3>
-                  <p className="font-normal text-[10px] sm:text-xs text-[#717171]">We are available 10am-6pm. You can call our customer service</p>
+                  <h3 className="font-medium text-sm sm:text-base text-black">Chat on WhatsApp</h3>
+                  <p className="font-normal text-[10px] sm:text-xs text-[#717171]">Get instant reply from us. Typically reply less than 30 mins</p>
                 </div>
               </div>
             </div>
             <div className="grid col-span-12 sm:col-span-4">
               <div className="flex gap-4 sm:gap-5 border border-[#DDDDDD] rounded-lg sm:rounded-xl px-5 sm:px-8 py-4 sm:py-6">
-                <div className="icon">
-                  <Image src={WebStoreIcon} alt="Web Store Icon" className="hidden sm:block"/>
+                <div>
+                  <Image src={WebStoreIcon} alt="Web Store Icon" className="hidden sm:block w-12"/>
                   <Image src={MobileStoreIcon} alt="Mobile Store Icon" className="block sm:hidden"/>
                 </div>
                 <div className="flex flex-col gap-2 sm:gap-3">
-                  <h3 className="font-medium text-sm sm:text-base text-black">Call Us</h3>
-                  <p className="font-normal text-[10px] sm:text-xs text-[#717171]">We are available 10am-6pm. You can call our customer service</p>
+                  <h3 className="font-medium text-sm sm:text-base text-black">Visit Our Store</h3>
+                  <p className="font-normal text-[10px] sm:text-xs text-[#717171]">We are available 10am-6pm. You can visit out physical store in this time</p>
                 </div>
               </div>
             </div>
