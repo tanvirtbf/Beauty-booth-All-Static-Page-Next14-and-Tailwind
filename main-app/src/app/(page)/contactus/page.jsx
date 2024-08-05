@@ -73,6 +73,8 @@ const Contactus = () => {
           <div className="form mt-7 sm:mt-9 mb-10 sm:mb-16">
             <h2 className="font-medium text-base sm:text-xl text-center text-black">Mail us your Query</h2>
             <form action="">
+
+              
             </form>
           </div>
 
