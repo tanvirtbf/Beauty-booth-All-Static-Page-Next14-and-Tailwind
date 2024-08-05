@@ -3,7 +3,7 @@ import FinalDropDown from "@/components/FinalDropDown";
 import Image from "next/image";
 import { useState } from "react";
 import Plus from "../../../../public/AccordianPlus.svg";
-import Minus from '../../../../public/AccordianMinus.svg'
+// import Minus from '../../../../public/AccordianMinus.svg';
 import FaqWebBanner from "../../../../public/faqWebBanner.png";
 import UserCircle from "../../../../public/user-cirlce-add 1.png";
 
@@ -154,12 +154,13 @@ const Faq = () => {
         <div className="w-full sm:w-3/4 order-3 flex flex-col gap-6">
           <div className="grid gap-3 sm:gap-6 grid-cols-12">
             {data.map(({ id, text }) => (
-              <div
+               <div
                 onClick={() => {
                   setIsClick(id);
                   setAccordianClick((prevState)=>({
                     ...prevState,
-                    whichContext:id
+                    whichContext:id,
+                    whichQuestion:1,
                   }))
                 }}
                 key={id}
