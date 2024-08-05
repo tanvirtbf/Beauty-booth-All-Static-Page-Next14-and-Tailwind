@@ -31,7 +31,7 @@ const Contactus = () => {
         </div>
         <FinalDropDown />
         <div className="w-full sm:w-3/4 order-3">
-          <div className="w-full grid grid-cols-12 gap-3 sm:gap-5">
+          <div className="threeSection w-full grid grid-cols-12 gap-3 sm:gap-5">
             <div className="grid col-span-12 sm:col-span-4">
               <div className="flex gap-4 sm:gap-5 border border-[#DDDDDD] rounded-lg sm:rounded-xl px-5 sm:px-8 py-4 sm:py-6">
                 <div>
@@ -70,7 +70,12 @@ const Contactus = () => {
             </div>
           </div>
 
-          <div></div>
+          <div className="form mt-7 sm:mt-9 mb-10 sm:mb-16">
+            <h2 className="font-medium text-base sm:text-xl text-center text-black">Mail us your Query</h2>
+            <form action="">
+              
+            </form>
+          </div>
 
           <div></div>
         </div>
