@@ -13,7 +13,7 @@ const Faq = () => {
     whichContext : isClick,
     whichQuestion : 1,
   })
-  const [plusOrMinus,setPlusOrMinus] = useState(false)
+  const [plusOrMinus,setPlusOrMinus] = useState(true)
   const data = [
     {
       id: 1,
@@ -197,7 +197,7 @@ const Faq = () => {
                         setPlusOrMinus(!plusOrMinus)
                       }} className="w-8 h-8 flex justify-center items-center bg-[#F6F8FA] rounded-full cursor-pointer">
                         {
-                          AccordianClick.whichContext === id && AccordianClick.whichQuestion === q_id && plusOrMinus === true ? <Image src={Minus} /> : <Image src={Plus} />
+                          AccordianClick.whichContext === id && AccordianClick.whichQuestion === q_id && plusOrMinus === false ? <Image src={Minus} /> : <Image src={Plus} />
                         }
                       </div>
                     </div>
