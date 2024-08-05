@@ -3,7 +3,7 @@ import FinalDropDown from "@/components/FinalDropDown";
 import Image from "next/image";
 import { useState } from "react";
 import Plus from "../../../../public/AccordianPlus.svg";
-// import Minus from '../../../../public/AccordianMinus.svg';
+import Minus from '../../../../public/AccordianMinus.svg';
 import FaqWebBanner from "../../../../public/faqWebBanner.png";
 import UserCircle from "../../../../public/user-cirlce-add 1.png";
 
@@ -12,9 +12,8 @@ const Faq = () => {
   const [AccordianClick,setAccordianClick] = useState({
     whichContext : isClick,
     whichQuestion : 1,
-    plusOrMinus : false,
   })
-  console.log(AccordianClick)
+  const [plusOrMinus,setPlusOrMinus] = useState(false)
   const data = [
     {
       id: 1,
@@ -194,9 +193,12 @@ const Faq = () => {
                         {ques}
                       </h3>
                       <div onClick={()=>{
-                        setAccordianClick({whichContext:id,whichQuestion:q_id,plusOrMinus:true});
+                        setAccordianClick({whichContext:id,whichQuestion:q_id});
+                        setPlusOrMinus(!plusOrMinus)
                       }} className="w-8 h-8 flex justify-center items-center bg-[#F6F8FA] rounded-full cursor-pointer">
-                        <Image src={Plus} />
+                        {
+                          AccordianClick.whichContext === id && AccordianClick.whichQuestion === q_id && plusOrMinus === true ? <Image src={Minus} /> : <Image src={Plus} />
+                        }
                       </div>
                     </div>
                     <div className={`font-normal text-xs sm:text-sm text-[#5A5A5A] ${AccordianClick.whichContext === id && AccordianClick.whichQuestion === q_id ? 'block' : 'hidden'}`}>
