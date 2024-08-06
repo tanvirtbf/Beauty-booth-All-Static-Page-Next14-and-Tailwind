@@ -135,26 +135,30 @@ const Contactus = () => {
             <h2 className="font-medium text-base sm:text-xl text-center text-black">
               Mail us your Query
             </h2>
-            <form action="" className="max-w-[540px] mt-4 border border-black py-5 px-4 sm:px-0 sm:py-8  m-auto">
-              <div>
-                <label htmlFor="fullName">Full Name</label>
-                <input type="text" id="fullName" placeholder="full name"/>
+            <form action="" className="max-w-[540px] flex flex-col gap-4 sm:gap-6 mt-4 py-5 px-4 sm:px-0 sm:py-8  m-auto">
+              <div className="flex flex-col gap-2">
+                <label htmlFor="fullName" className="font-medium text-xs sm:text-sm text-[#717171]">Full Name</label>
+                <input type="text" id="fullName" className="px-4 py-3 border border-[#DDDDDD] rounded-2xl sm:rounded-xl outline-none placeholderCss" placeholder="full name"/>
               </div>
-              <div>
-                <label htmlFor="fullName">Full Name</label>
-                <input type="text" id="fullName" placeholder="full name"/>
+              <div className="flex flex-col gap-2">
+                <label htmlFor="fullName" className="font-medium text-xs sm:text-sm text-[#717171]">Full Name</label>
+                <input type="text" id="fullName" className="px-4 py-3 border border-[#DDDDDD] rounded-2xl sm:rounded-xl outline-none placeholderCss" placeholder="full name"/>
               </div>
-              <div>
-                <label htmlFor="fullName">Full Name</label>
-                <input type="text" id="fullName" placeholder="full name"/>
+              <div className="flex flex-col gap-2">
+                <label htmlFor="fullName" className="font-medium text-xs sm:text-sm text-[#717171]">Full Name</label>
+                <input type="text" id="fullName" className="px-4 py-3 border border-[#DDDDDD] rounded-2xl sm:rounded-xl outline-none placeholderCss" placeholder="full name"/>
               </div>
-              <div>
-                <label htmlFor="fullName">Full Name</label>
-                <input type="text" id="fullName" placeholder="full name"/>
+              <div className="flex flex-col gap-2">
+                <label htmlFor="fullName" className="font-medium text-xs sm:text-sm text-[#717171]">Full Name</label>
+                <input type="text" id="fullName" className="px-4 py-3 border border-[#DDDDDD] rounded-2xl sm:rounded-xl outline-none placeholderCss" placeholder="full name"/>
               </div>
-              <div>
-                <label htmlFor="fullName">Full Name</label>
-                <input type="text" id="fullName" placeholder="full name"/>
+              <div className="flex flex-col gap-2">
+                <label htmlFor="fullName" className="font-medium text-xs sm:text-sm text-[#717171]">Full Name</label>
+                <input type="text" id="fullName" className="px-4 py-3 border border-[#DDDDDD] rounded-2xl sm:rounded-xl outline-none placeholderCss" placeholder="full name"/>
+              </div>
+              <div className="w-full flex gap-3 sm:gap-4">
+                <button className="w-full sm:w-fit border border-[#DDDDDD] sm:border-[#999999] rounded-lg px-6 py-3 font-medium text-sm text-[#222222]">Back to shopping</button>
+                <button className="w-full sm:w-fit py-3 px-6 rounded-lg bg-black font-medium text-xs sm:text-sm text-[#FBFBFB]">Send Message</button>
               </div>
             </form>
           </div>

@@ -25,6 +25,9 @@
   .dropgap{
     @apply flex justify-start items-center gap-4;
   }
+  .placeholderCss::placeholder{
+    @apply font-normal sm:text-sm text-xs text-[#717171]
+  }
   .desktop-dropdown{
     border-radius: 0 20px 20px 0;
     background-color :#F1F2F7;
