@@ -13,6 +13,23 @@ import WebMap from '../../../../public/webMap.png'
 import MobileMap from '../../../../public/mobileMap.png'
 
 const Contactus = () => {
+  const store = [
+    {
+      id: 1, 
+      numberOfStore: 'Store 1',
+      storeName: 'Dragon Mart',
+    },
+    {
+      id: 2, 
+      numberOfStore: 'Store 2',
+      storeName: 'Dragon Mart',
+    },
+    {
+      id: 3, 
+      numberOfStore: 'Store 3',
+      storeName: 'Dragon Mart',
+    }
+  ]
   return (
     <div className="container">
       <div className="w-full flex flex-wrap justify-between">
@@ -83,7 +100,9 @@ const Contactus = () => {
           <div className="w-full flex flex-col gap-3 sm:gap-6">
             <h2 className="text-center">Our Store Locations</h2>
             <div className="flex gap-3 sm:gap-6">
-              <div></div>
+              <div className="flex flex-col gap-3 sm:gap-4">
+
+              </div>
               <div className="images">
                 <Image src={WebMap} alt="web map banner" className="hidden sm:block"/>
                 <Image src={MobileMap} alt="web map banner" className="block sm:hidden"/>
