@@ -135,7 +135,28 @@ const Contactus = () => {
             <h2 className="font-medium text-base sm:text-xl text-center text-black">
               Mail us your Query
             </h2>
-            <form action=""></form>
+            <form action="" className="max-w-[540px] mt-4 border border-black py-5 px-4 sm:px-0 sm:py-8  m-auto">
+              <div>
+                <label htmlFor="fullName">Full Name</label>
+                <input type="text" id="fullName" placeholder="full name"/>
+              </div>
+              <div>
+                <label htmlFor="fullName">Full Name</label>
+                <input type="text" id="fullName" placeholder="full name"/>
+              </div>
+              <div>
+                <label htmlFor="fullName">Full Name</label>
+                <input type="text" id="fullName" placeholder="full name"/>
+              </div>
+              <div>
+                <label htmlFor="fullName">Full Name</label>
+                <input type="text" id="fullName" placeholder="full name"/>
+              </div>
+              <div>
+                <label htmlFor="fullName">Full Name</label>
+                <input type="text" id="fullName" placeholder="full name"/>
+              </div>
+            </form>
           </div>
 
           <div className="w-full flex flex-col gap-3 sm:gap-6">
