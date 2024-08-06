@@ -11,6 +11,8 @@ import MobileWhatsappIcon from '../../../../public/MobileWhatsappIcon.svg'
 import MobileStoreIcon from '../../../../public/MobileStoreIcon.svg'
 import WebMap from '../../../../public/webMap.png'
 import MobileMap from '../../../../public/mobileMap.png'
+import WebMapStoreIcon from '../../../../public/webMapStoreIcon.svg'
+import mobileMapStoreIcon from '../../../../public/mobileMapStoreIcon.svg'
 
 const Contactus = () => {
   const store = [
@@ -101,8 +103,11 @@ const Contactus = () => {
             <h2 className="text-center">Our Store Locations</h2>
             <div className="flex gap-3 sm:gap-6">
               <div className="flex flex-col gap-3 sm:gap-4">
-                <div className="singleStore px-4 py-[10px] sm:px-6 sm:py-3 flex sm:gap-5 gap-3 border border-[#DDDDDD] rounded-md sm:rounded-lg">
-
+                <div className="px-4 py-[10px] sm:px-6 sm:py-3 flex sm:gap-5 gap-3 border border-[#DDDDDD] rounded-md sm:rounded-lg">
+                  <div>
+                    <Image src={WebMapStoreIcon} alt="web map store icon" className="hidden sm:block" />
+                    <Image src={mobileMapStoreIcon} alt="mobile map store icon" className="block sm:hidden" />
+                  </div>
                 </div>
               </div>
               <div className="images">
