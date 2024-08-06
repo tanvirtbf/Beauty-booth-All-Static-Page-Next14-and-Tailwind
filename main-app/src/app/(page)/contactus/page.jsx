@@ -101,7 +101,9 @@ const Contactus = () => {
             <h2 className="text-center">Our Store Locations</h2>
             <div className="flex gap-3 sm:gap-6">
               <div className="flex flex-col gap-3 sm:gap-4">
+                <div className="singleStore px-4 py-[10px] sm:px-6 sm:py-3 flex sm:gap-5 gap-3 border border-[#DDDDDD] rounded-md sm:rounded-lg">
 
+                </div>
               </div>
               <div className="images">
                 <Image src={WebMap} alt="web map banner" className="hidden sm:block"/>
