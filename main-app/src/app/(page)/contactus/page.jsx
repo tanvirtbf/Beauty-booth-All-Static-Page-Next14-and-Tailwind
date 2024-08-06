@@ -141,20 +141,20 @@ const Contactus = () => {
                 <input type="text" id="fullName" className="px-4 py-3 border border-[#DDDDDD] rounded-2xl sm:rounded-xl outline-none placeholderCss" placeholder="full name"/>
               </div>
               <div className="flex flex-col gap-2">
-                <label htmlFor="fullName" className="font-medium text-xs sm:text-sm text-[#717171]">Full Name</label>
-                <input type="text" id="fullName" className="px-4 py-3 border border-[#DDDDDD] rounded-2xl sm:rounded-xl outline-none placeholderCss" placeholder="full name"/>
+                <label htmlFor="fullName" className="font-medium text-xs sm:text-sm text-[#717171]">Query Title</label>
+                <input type="text" id="fullName" className="px-4 py-3 border border-[#DDDDDD] rounded-2xl sm:rounded-xl outline-none placeholderCss" placeholder="what you want to know"/>
               </div>
               <div className="flex flex-col gap-2">
-                <label htmlFor="fullName" className="font-medium text-xs sm:text-sm text-[#717171]">Full Name</label>
-                <input type="text" id="fullName" className="px-4 py-3 border border-[#DDDDDD] rounded-2xl sm:rounded-xl outline-none placeholderCss" placeholder="full name"/>
+                <label htmlFor="fullName" className="font-medium text-xs sm:text-sm text-[#717171]">Mobile Number</label>
+                <input type="text" id="fullName" className="px-4 py-3 border border-[#DDDDDD] rounded-2xl sm:rounded-xl outline-none placeholderCss" placeholder="XXXXXXXX"/>
               </div>
               <div className="flex flex-col gap-2">
-                <label htmlFor="fullName" className="font-medium text-xs sm:text-sm text-[#717171]">Full Name</label>
-                <input type="text" id="fullName" className="px-4 py-3 border border-[#DDDDDD] rounded-2xl sm:rounded-xl outline-none placeholderCss" placeholder="full name"/>
+                <label htmlFor="fullName" className="font-medium text-xs sm:text-sm text-[#717171]">Mail address</label>
+                <input type="text" id="fullName" className="px-4 py-3 border border-[#DDDDDD] rounded-2xl sm:rounded-xl outline-none placeholderCss" placeholder="enter email"/>
               </div>
               <div className="flex flex-col gap-2">
-                <label htmlFor="fullName" className="font-medium text-xs sm:text-sm text-[#717171]">Full Name</label>
-                <input type="text" id="fullName" className="px-4 py-3 border border-[#DDDDDD] rounded-2xl sm:rounded-xl outline-none placeholderCss" placeholder="full name"/>
+                <label htmlFor="fullName" className="font-medium text-xs sm:text-sm text-[#717171]">Your Message</label>
+                <input type="text" id="fullName" className="px-4 py-3 border border-[#DDDDDD] rounded-2xl sm:rounded-xl outline-none placeholderCss" placeholder="your message here..."/>
               </div>
               <div className="w-full flex gap-3 sm:gap-4">
                 <button className="w-full sm:w-fit border border-[#DDDDDD] sm:border-[#999999] rounded-lg px-6 py-3 font-medium text-sm text-[#222222]">Back to shopping</button>
