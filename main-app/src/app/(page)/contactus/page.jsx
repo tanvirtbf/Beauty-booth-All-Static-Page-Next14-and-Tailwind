@@ -80,8 +80,15 @@ const Contactus = () => {
             </form>
           </div>
 
-          <div>
-            <h2></h2>
+          <div className="w-full flex flex-col gap-3 sm:gap-6">
+            <h2 className="text-center">Our Store Locations</h2>
+            <div className="flex gap-3 sm:gap-6">
+              <div></div>
+              <div className="images">
+                <Image src={WebMap} alt="web map banner" className="hidden sm:block"/>
+                <Image src={MobileMap} alt="web map banner" className="block sm:hidden"/>
+              </div>
+            </div>
           </div>
         </div>
       </div>
