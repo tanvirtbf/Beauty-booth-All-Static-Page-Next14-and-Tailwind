@@ -154,11 +154,11 @@ const Contactus = () => {
               </div>
               <div className="flex flex-col gap-2">
                 <label htmlFor="fullName" className="font-medium text-xs sm:text-sm text-[#717171]">Your Message</label>
-                <input type="text" id="fullName" className="px-4 py-3 border border-[#DDDDDD] rounded-2xl sm:rounded-xl outline-none placeholderCss" placeholder="your message here..."/>
+                <textarea rows={4} type="text" id="fullName" className="px-4 py-3 border border-[#DDDDDD] rounded-2xl sm:rounded-xl outline-none placeholderCss" placeholder="your message here..."/>
               </div>
               <div className="w-full flex gap-3 sm:gap-4">
                 <button className="w-full sm:w-fit border border-[#DDDDDD] sm:border-[#999999] rounded-lg px-6 py-3 font-medium text-sm text-[#222222]">Back to shopping</button>
-                <button className="w-full sm:w-fit py-3 px-6 rounded-lg bg-black font-medium text-xs sm:text-sm text-[#FBFBFB]">Send Message</button>
+                <button type="submit" className="w-full sm:w-fit py-3 px-6 rounded-lg bg-black font-medium text-xs sm:text-sm text-[#FBFBFB]">Send Message</button>
               </div>
             </form>
           </div>
