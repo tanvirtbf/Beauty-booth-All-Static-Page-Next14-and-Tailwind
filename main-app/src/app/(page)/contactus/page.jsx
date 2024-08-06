@@ -1,6 +1,7 @@
 "use client";
 import FinalDropDown from "@/components/FinalDropDown";
 import Image from "next/image";
+import { useState } from "react";
 import MobileBanner from "../../../../public/contactusMobileBanner.png";
 import WebBanner from "../../../../public/contactusWebBanner.png";
 import MobileMap from "../../../../public/mobileMap.png";
@@ -13,11 +14,10 @@ import WebMapStoreIcon from "../../../../public/webMapStoreIcon.svg";
 import WebMobileIcon from "../../../../public/WebMobileIcon.svg";
 import WebStoreIcon from "../../../../public/WebStoreIcon.svg";
 import WebWhatsappIcon from "../../../../public/WebWhatsappIcon.svg";
-import { useState } from "react";
 
 const Contactus = () => {
-  const [storeClick,setStoreClick] = useState(1)
-  console.log(storeClick)
+  const [storeClick, setStoreClick] = useState(1);
+  console.log(storeClick);
   const store = [
     {
       id: 1,
@@ -139,11 +139,19 @@ const Contactus = () => {
           </div>
 
           <div className="w-full flex flex-col gap-3 sm:gap-6">
-            <h2 className="text-center font-medium text-base sm:text-xl text-black">Our Store Locations</h2>
+            <h2 className="text-center font-medium text-base sm:text-xl text-black">
+              Our Store Locations
+            </h2>
             <div className="flex sm:flex-nowrap flex-wrap gap-3 sm:gap-6">
               <div className="flex flex-col gap-3 sm:gap-4 w-full sm:w-56">
-                {store.map(({id,numberOfStore,storeName}) => (
-                  <div key={id} className={`w-full sm:w-56 px-4 py-[10px] sm:px-6 sm:py-3 flex sm:gap-5 gap-3 border ${storeClick===id ? 'border-black' : 'border-[#DDDDDD]'} rounded-md sm:rounded-lg cursor-pointer`} onClick={()=> setStoreClick(id)}>
+                {store.map(({ id, numberOfStore, storeName }) => (
+                  <div
+                    key={id}
+                    className={`w-full sm:w-56 px-4 py-[10px] sm:px-6 sm:py-3 flex sm:gap-5 gap-3 border ${
+                      storeClick === id ? "border-black" : "border-[#DDDDDD]"
+                    } rounded-md sm:rounded-lg cursor-pointer`}
+                    onClick={() => setStoreClick(id)}
+                  >
                     <div className="flex flex-col justify-center">
                       <Image
                         src={WebMapStoreIcon}
