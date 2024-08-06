@@ -143,7 +143,7 @@ const Contactus = () => {
             <div className="flex sm:flex-nowrap flex-wrap gap-3 sm:gap-6">
               <div className="flex flex-col gap-3 sm:gap-4 w-full sm:w-56">
                 {store.map(({id,numberOfStore,storeName}) => (
-                  <div key={id} className="w-full sm:w-56 px-4 py-[10px] sm:px-6 sm:py-3 flex sm:gap-5 gap-3 border border-[#DDDDDD] rounded-md sm:rounded-lg cursor-pointer" onClick={()=> setStoreClick(id)}>
+                  <div key={id} className={`w-full sm:w-56 px-4 py-[10px] sm:px-6 sm:py-3 flex sm:gap-5 gap-3 border ${storeClick===id ? 'border-black' : 'border-[#DDDDDD]'} rounded-md sm:rounded-lg cursor-pointer`} onClick={()=> setStoreClick(id)}>
                     <div className="flex flex-col justify-center">
                       <Image
                         src={WebMapStoreIcon}
