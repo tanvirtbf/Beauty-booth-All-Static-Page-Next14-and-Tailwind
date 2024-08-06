@@ -9,6 +9,8 @@ import WebStoreIcon from '../../../../public/WebStoreIcon.svg'
 import MobileMobileIcon from '../../../../public/MobileMobileIcon.svg'
 import MobileWhatsappIcon from '../../../../public/MobileWhatsappIcon.svg'
 import MobileStoreIcon from '../../../../public/MobileStoreIcon.svg'
+import WebMap from '../../../../public/webMap.png'
+import MobileMap from '../../../../public/mobileMap.png'
 
 const Contactus = () => {
   return (
