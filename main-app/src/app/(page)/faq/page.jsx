@@ -18,6 +18,7 @@ const Faq = () => {
     {
       id: 1,
       text: "New Visitor",
+      href:'new-visitor',
       question: [
         {
           q_id: 1,
@@ -39,6 +40,7 @@ const Faq = () => {
     {
       id: 2,
       text: "Account & Payment",
+      href:'account-and-payment',
       question: [
         {
           q_id: 1,
@@ -60,6 +62,7 @@ const Faq = () => {
     {
       id: 3,
       text: "Delivery & Return",
+      href:'delivery-and-return',
       question: [
         {
           q_id: 1,
@@ -81,6 +84,7 @@ const Faq = () => {
     {
       id: 4,
       text: "Guest Checkout",
+      href:'guest-checkout',
       question: [
         {
           q_id: 1,
@@ -102,6 +106,7 @@ const Faq = () => {
     {
       id: 5,
       text: "Shopping",
+      href:'shopping',
       question: [
         {
           q_id: 1,
@@ -123,6 +128,7 @@ const Faq = () => {
     {
       id: 6,
       text: "Promotions & Freebies",
+      href:'promotions-and-freebies',
       question: [
         {
           q_id: 1,
