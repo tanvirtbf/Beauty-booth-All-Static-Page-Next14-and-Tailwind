@@ -6,6 +6,9 @@
   .text-balance {
     text-wrap: balance;
   }
+  *{
+    scroll-behavior: smooth;
+  }
   .container{
     @apply px-[16px] sm:px-[60px] pt-4 pb-11 max-w-[1320px] mx-auto;
   }
