@@ -215,7 +215,7 @@ const Faq = () => {
                         }
                       </div>
                     </div>
-                    <div className={`font-normal text-xs sm:text-sm text-[#5A5A5A] ${AccordianClick.section === id && AccordianClick.question === q_id && AccordianClick.isClick.keys === q_id  ? 'block' : 'hidden'}`}>
+                    <div className={`font-normal text-xs sm:text-sm text-[#5A5A5A] ${AccordianClick.section === id && AccordianClick.question === q_id && AccordianClick.isClick.keys === q_id && AccordianClick.isClick.state === true ? 'block' : 'hidden'}`}>
                       {desc}
                     </div>
                     <div className="w-full h-[1px] bg-[#ECECEE]"></div>
