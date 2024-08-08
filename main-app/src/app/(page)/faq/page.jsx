@@ -16,11 +16,13 @@ const Faq = () => {
       state: true,
     },
   })
-  const [click,setClick] = useState(false)
+  const [click,setClick] = useState({
+    clickId: 1, 
+    clickState: false
+  })
   console.log(AccordianClick.section)
   console.log(AccordianClick.question)
   console.log(AccordianClick.isClick)
-  console.log(click)
   const data = [
     {
       id: 1,
@@ -172,7 +174,7 @@ const Faq = () => {
                     ...prevState,
                     section:id,
                     question:1,
-                    isClick: {keys: AccordianClick.question , state: true}
+                    isClick: {keys: 1 , state: true}
                   }))
                 }}
                 key={id}
