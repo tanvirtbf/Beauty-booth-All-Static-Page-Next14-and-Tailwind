@@ -14,6 +14,7 @@ const Faq = () => {
     whichQuestion : 1,
   })
   const [plusOrMinus,setPlusOrMinus] = useState(true)
+  console.log(plusOrMinus)
   const data = [
     {
       id: 1,
@@ -207,7 +208,7 @@ const Faq = () => {
                         }
                       </div>
                     </div>
-                    <div className={`font-normal text-xs sm:text-sm text-[#5A5A5A] ${AccordianClick.whichContext === id && AccordianClick.whichQuestion === q_id ? 'block' : 'hidden'}`}>
+                    <div className={`font-normal text-xs sm:text-sm text-[#5A5A5A] ${AccordianClick.whichContext === id && AccordianClick.whichQuestion === q_id && plusOrMinus ? 'block' : 'hidden'}`}>
                       {desc}
                     </div>
                     <div className="w-full h-[1px] bg-[#ECECEE]"></div>
