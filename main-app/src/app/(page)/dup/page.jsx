@@ -208,7 +208,7 @@ const Faq = () => {
                         });
                       }} className="w-8 h-8 flex justify-center items-center bg-[#F6F8FA] rounded-full cursor-pointer">
                         {
-                          AccordianClick.section === id && AccordianClick.question === q_id && AccordianClick.isClick.keys === q_id && AccordianClick.isClick.state === true ? <Image src={Minus} /> : <Image src={Plus} />
+                          AccordianClick.section === id && AccordianClick.question === q_id && AccordianClick.isClick.keys === q_id && AccordianClick.isClick.state === true ? <Image src={Minus} alt="minus icon" /> : <Image src={Plus} alt="plus icon" />
                         }
                       </div>
                     </div>

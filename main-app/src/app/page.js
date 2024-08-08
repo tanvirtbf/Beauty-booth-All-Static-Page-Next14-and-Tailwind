@@ -16,6 +16,12 @@ export default function Home() {
       <Link href={"/returnpolicy"} className="homeBtn">
         Return Page
       </Link>
+      <Link href={"/contactus"} className="homeBtn">
+        Contact Us Page
+      </Link>
+      <Link href={"/faq"} className="homeBtn">
+        FAQ Page
+      </Link>
     </div>
   );
 }
