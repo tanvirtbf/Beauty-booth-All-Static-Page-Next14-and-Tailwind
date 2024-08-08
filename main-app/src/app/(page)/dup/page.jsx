@@ -16,6 +16,9 @@ const Faq = () => {
       state: true,
     },
   })
+  console.log(AccordianClick.section)
+  console.log(AccordianClick.question)
+  console.log(AccordianClick.isClick)
   const data = [
     {
       id: 1,
@@ -167,7 +170,7 @@ const Faq = () => {
                     ...prevState,
                     section:id,
                     question:1,
-                    isClick: {keys: AccordianClick.question , state: true}
+                    isClick: {keys: 1 , state: true}
                   }))
                 }}
                 key={id}
@@ -201,14 +204,14 @@ const Faq = () => {
                         {ques}
                       </h3>
                       <div onClick={()=>{
-                        setAccordianClick({
+                        setAccordianClick(()=>({
                           section:id,
                           question:q_id,
                           isClick: {keys: q_id, state: !AccordianClick.isClick.state}
-                        });
+                        }));
                       }} className="w-8 h-8 flex justify-center items-center bg-[#F6F8FA] rounded-full cursor-pointer">
                         {
-                          AccordianClick.section === id && AccordianClick.question === q_id && AccordianClick.isClick.keys === q_id && AccordianClick.isClick.state === true ? <Image src={Minus} alt="minus icon" /> : <Image src={Plus} alt="plus icon" />
+                          AccordianClick.section === id && AccordianClick.question === q_id && AccordianClick.isClick.keys === q_id && AccordianClick.isClick.state === true ? <Image src={Minus} alt="minus"/> : <Image src={Plus} alt="plus" />
                         }
                       </div>
                     </div>

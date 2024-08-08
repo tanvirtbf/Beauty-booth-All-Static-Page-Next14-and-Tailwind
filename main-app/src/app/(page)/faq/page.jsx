@@ -16,10 +16,6 @@ const Faq = () => {
       state: true,
     },
   })
-  const [click,setClick] = useState({
-    clickId: 1, 
-    clickState: false
-  })
   console.log(AccordianClick.section)
   console.log(AccordianClick.question)
   console.log(AccordianClick.isClick)
@@ -213,14 +209,13 @@ const Faq = () => {
                           question:q_id,
                           isClick: {keys: q_id, state: !AccordianClick.isClick.state}
                         }));
-                        setClick(()=>!click)
                       }} className="w-8 h-8 flex justify-center items-center bg-[#F6F8FA] rounded-full cursor-pointer">
                         {
                           AccordianClick.section === id && AccordianClick.question === q_id && AccordianClick.isClick.keys === q_id && AccordianClick.isClick.state === true ? <Image src={Minus} alt="minus"/> : <Image src={Plus} alt="plus" />
                         }
                       </div>
                     </div>
-                    <div className={`font-normal text-xs sm:text-sm text-[#5A5A5A] ${AccordianClick.section === id && AccordianClick.question === q_id && AccordianClick.isClick.keys === q_id && AccordianClick.isClick.state === true ? 'block' : 'hidden'}`}>
+                    <div className={`font-normal text-xs sm:text-sm text-[#5A5A5A] ${AccordianClick.section === id && AccordianClick.question === q_id && AccordianClick.isClick.keys === q_id  ? 'block' : 'hidden'}`}>
                       {desc}
                     </div>
                     <div className="w-full h-[1px] bg-[#ECECEE]"></div>
