@@ -153,6 +153,16 @@ const Faq = () => {
       ],
     },
   ];
+  const handleClick = (id,dataId)=>{
+    const div = document.querySelector(`#${dataId}`)
+    window.scrollTo(0, div.offsetTop-100)
+    setAccordianClick((prevState)=>({
+      ...prevState,
+      section:id,
+      question:1,
+      isClick: {keys: 1 , state: true}
+    }))
+  }
   return (
     <div className="container">
       <div className="w-full flex flex-wrap justify-between">
@@ -165,14 +175,7 @@ const Faq = () => {
           <div className="grid gap-3 sm:gap-6 grid-cols-12">
             {data.map(({ id, text, dataId }) => (
                <div
-                onClick={() => {
-                  setAccordianClick((prevState)=>({
-                    ...prevState,
-                    section:id,
-                    question:1,
-                    isClick: {keys: 1 , state: true}
-                  }))
-                }}
+                onClick={()=>handleClick(id,dataId)}
                 key={id}
                 className={`px-5 py-6 rounded-lg border ${
                   AccordianClick.section === id ? "border-black" : "border-[#ECECEE]"
@@ -191,7 +194,7 @@ const Faq = () => {
           </div>
           <div>
             {data.map(({ id, text, question, dataId }) => (
-              <div key={id} className="TOTAL-QUESTION w-full">
+              <div id={dataId} key={id} className="TOTAL-QUESTION w-full">
                 <div className="HEADING pt-9 pb-4 px-3">
                   <h2 className="text-lg sm:text-2xl font-bold text-black">
                     {text}
