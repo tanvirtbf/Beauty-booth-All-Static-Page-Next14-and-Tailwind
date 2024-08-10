@@ -23,7 +23,7 @@ const Faq = () => {
     {
       id: 1,
       text: "New Visitor",
-      href:'new-visitor',
+      dataId:'new-visitor',
       question: [
         {
           q_id: 1,
@@ -45,7 +45,7 @@ const Faq = () => {
     {
       id: 2,
       text: "Account & Payment",
-      href:'account-and-payment',
+      dataId:'account-and-payment',
       question: [
         {
           q_id: 1,
@@ -67,7 +67,7 @@ const Faq = () => {
     {
       id: 3,
       text: "Delivery & Return",
-      href:'delivery-and-return',
+      dataId:'delivery-and-return',
       question: [
         {
           q_id: 1,
@@ -89,7 +89,7 @@ const Faq = () => {
     {
       id: 4,
       text: "Guest Checkout",
-      href:'guest-checkout',
+      dataId:'guest-checkout',
       question: [
         {
           q_id: 1,
@@ -111,7 +111,7 @@ const Faq = () => {
     {
       id: 5,
       text: "Shopping",
-      href:'shopping',
+      dataId:'shopping',
       question: [
         {
           q_id: 1,
@@ -133,7 +133,7 @@ const Faq = () => {
     {
       id: 6,
       text: "Promotions & Freebies",
-      href:'promotions-and-freebies',
+      dataId:'promotions-and-freebies',
       question: [
         {
           q_id: 1,
@@ -163,7 +163,7 @@ const Faq = () => {
         <FinalDropDown />
         <div className="w-full sm:w-3/4 order-3 flex flex-col gap-6">
           <div className="grid gap-3 sm:gap-6 grid-cols-12">
-            {data.map(({ id, text }) => (
+            {data.map(({ id, text, dataId }) => (
                <div
                 onClick={() => {
                   setAccordianClick((prevState)=>({
@@ -190,7 +190,7 @@ const Faq = () => {
             ))}
           </div>
           <div>
-            {data.map(({ id, text, question }) => (
+            {data.map(({ id, text, question, dataId }) => (
               <div key={id} className="TOTAL-QUESTION w-full">
                 <div className="HEADING pt-9 pb-4 px-3">
                   <h2 className="text-lg sm:text-2xl font-bold text-black">
