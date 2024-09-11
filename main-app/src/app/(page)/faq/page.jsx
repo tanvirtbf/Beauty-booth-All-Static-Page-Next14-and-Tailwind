@@ -16,9 +16,6 @@ const Faq = () => {
       state: true,
     },
   })
-  console.log(AccordianClick.section)
-  console.log(AccordianClick.question)
-  console.log(AccordianClick.isClick)
   const data = [
     {
       id: 1,
