@@ -168,7 +168,7 @@ const Faq = () => {
           <Image src={FaqWebBanner} alt="faq Banner" priority />
         </div>
         <FinalDropDown />
-        <div className="w-full sm:w-3/4 order-3 flex flex-col gap-6">
+        <div className="w-full lg:w-3/4 order-3 flex flex-col gap-6 sm:mt-8">
           <div className="grid gap-3 sm:gap-6 grid-cols-12">
             {data.map(({ id, text, dataId }) => (
                <div
