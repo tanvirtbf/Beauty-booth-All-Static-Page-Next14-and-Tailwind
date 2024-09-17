@@ -161,6 +161,7 @@ const Faq = () => {
       isClick: {keys: 1 , state: true}
     }))
   }
+  
   return (
     <div className="container">
       <div className="w-full flex flex-wrap justify-between">
