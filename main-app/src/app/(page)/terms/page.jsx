@@ -1,5 +1,6 @@
 import Image from "next/image";
-import TermsBanner from "../../../../public/Terms.png";
+import TermsWebBanner from "../../../../public/termsWebBanner.png";
+import TermsMobileBanner from "../../../../public/termsMobileBanner.png";
 import FinalDropDown from "@/components/FinalDropDown";
 
 const Terms = () => {
@@ -8,7 +9,8 @@ const Terms = () => {
       <div className="w-full flex flex-wrap justify-between">
       <div className="w-full flex flex-col gap-6 order-2 sm:order-1 mt-7 mb-6">
       <h1 className="staticHeading">Terms & Conditions</h1>
-          <Image src={TermsBanner} alt="Terms Banner" priority />
+          <Image src={TermsWebBanner} alt="Terms Banner" priority className="w-full hidden sm:block" />
+          <Image src={TermsMobileBanner} alt="Terms Banner" priority className="w-full block sm:hidden"  />
         </div>
         <FinalDropDown />
         <div className="w-full sm:w-3/4 order-3">

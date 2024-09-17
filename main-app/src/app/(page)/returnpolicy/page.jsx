@@ -1,5 +1,7 @@
 import Image from "next/image";
-import ReturnPolicyBanner from "../../../../public/ReturnPolicy.png";
+import ReturnPolicyWebBanner from "../../../../public/ReturnPolicyWebBanner.png";
+import ReturnPolicyMobileBanner from "../../../../public/ReturnPolicyMobileBanner.png";
+
 import FinalDropDown from "@/components/FinalDropDown";
 
 const ReturnPolicy = () => {
@@ -8,7 +10,8 @@ const ReturnPolicy = () => {
       <div className="w-full flex flex-wrap justify-between">
       <div className="w-full flex flex-col gap-6 order-2 sm:order-1 mt-7 mb-6">
       <h1 className="staticHeading">Return & Refund Policy</h1>
-          <Image src={ReturnPolicyBanner} alt="Return Banner" priority />
+          <Image src={ReturnPolicyWebBanner} alt="Return Web Banner" priority className="w-full hidden sm:block" />
+          <Image src={ReturnPolicyMobileBanner} alt="Return Mobile Banner" priority className="w-full block sm:hidden" />
         </div>
         <FinalDropDown />
         <div className="w-full sm:w-3/4 order-3">

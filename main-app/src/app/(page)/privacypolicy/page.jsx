@@ -1,6 +1,7 @@
 import FinalDropDown from "@/components/FinalDropDown";
 import Image from "next/image";
-import PrivacyPolicyBanner from "../../../../public/PrivacyPolicy.png";
+import PrivacyPolicyWebBanner from "../../../../public/privacyPolicyWebBanner.png";
+import PrivacyPolicyMobileBanner from "../../../../public/privacyPolicyMobileBanner.png";
 
 const PrivacyPolicies = () => {
   return (
@@ -8,7 +9,8 @@ const PrivacyPolicies = () => {
       <div className="w-full flex flex-wrap justify-between">
       <div className="w-full flex flex-col gap-6 order-2 sm:order-1 mt-7 mb-6">
       <h1 className="staticHeading">Privacy Policy</h1>
-          <Image src={PrivacyPolicyBanner} alt="Privacy Banner" priority />
+          <Image src={PrivacyPolicyWebBanner} alt="Privacy Banner" priority className="w-full hidden sm:block"/>
+          <Image src={PrivacyPolicyMobileBanner} alt="Privacy Banner" priority className="w-full block sm:hidden" />
         </div> 
         <FinalDropDown />
         <div className="w-full sm:w-3/4 order-3">

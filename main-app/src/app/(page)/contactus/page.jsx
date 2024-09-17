@@ -17,7 +17,6 @@ import WebWhatsappIcon from "../../../../public/WebWhatsappIcon.svg";
 
 const Contactus = () => {
   const [storeClick, setStoreClick] = useState(1);
-  console.log(storeClick);
   const store = [
     {
       id: 1,
@@ -54,9 +53,9 @@ const Contactus = () => {
           />
         </div>
         <FinalDropDown />
-        <div className="w-full sm:w-3/4 order-3">
+        <div className="w-full lg:w-3/4 order-3 sm:mt-8">
           <div className="threeSection w-full grid grid-cols-12 gap-3 sm:gap-5">
-            <div className="grid col-span-12 sm:col-span-4">
+            <div className="grid col-span-12 lg:col-span-4">
               <div className="flex gap-4 sm:gap-5 border border-[#DDDDDD] rounded-lg sm:rounded-xl px-5 sm:px-8 py-4 sm:py-6">
                 <div>
                   <Image
@@ -80,7 +79,7 @@ const Contactus = () => {
                 </div>
               </div>
             </div>
-            <div className="grid col-span-12 sm:col-span-4">
+            <div className="grid col-span-12 lg:col-span-4">
               <div className="flex gap-4 sm:gap-5 border border-[#DDDDDD] rounded-lg sm:rounded-xl px-5 sm:px-8 py-4 sm:py-6">
                 <div>
                   <Image
@@ -104,7 +103,7 @@ const Contactus = () => {
                 </div>
               </div>
             </div>
-            <div className="grid col-span-12 sm:col-span-4">
+            <div className="grid col-span-12 lg:col-span-4">
               <div className="flex gap-4 sm:gap-5 border border-[#DDDDDD] rounded-lg sm:rounded-xl px-5 sm:px-8 py-4 sm:py-6">
                 <div>
                   <Image

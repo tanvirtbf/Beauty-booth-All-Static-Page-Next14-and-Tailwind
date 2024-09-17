@@ -5,6 +5,7 @@ import { useState } from "react";
 import Plus from "../../../../public/AccordianPlus.svg";
 import Minus from '../../../../public/AccordianMinus.svg';
 import FaqWebBanner from "../../../../public/faqWebBanner.png";
+import FaqMobileBanner from "../../../../public/faqMobileBanner.png"
 import UserCircle from "../../../../public/user-cirlce-add 1.png";
 
 const Faq = () => {
@@ -165,7 +166,8 @@ const Faq = () => {
       <div className="w-full flex flex-wrap justify-between">
         <div className="w-full flex flex-col gap-6 order-2 sm:order-1 mt-7 mb-6">
           <h1 className="staticHeading">Frequently Asked Questions</h1>
-          <Image src={FaqWebBanner} alt="faq Banner" priority />
+          <Image src={FaqWebBanner} alt="faq Web Banner" priority className="w-full hidden sm:block" />
+          <Image src={FaqMobileBanner} alt="faq Mobile Banner" priority className="w-full block sm:hidden" />
         </div>
         <FinalDropDown />
         <div className="w-full lg:w-3/4 order-3 flex flex-col gap-6 sm:mt-8">

@@ -9,18 +9,12 @@ import FaqIcon from "../../public/faqIcon.png";
 import PrivacyIcon from "../../public/privacypolicyIcon.png";
 import ReturnIcon from "../../public/returnIcon.png";
 import TermsIcon from "../../public/termsIcon.png";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 const FinalDropDown = () => {
-  const [divId, setDivId] = useState(0);
-  const [isPc,setIsPc] = useState(false)
   const [isClick, setIsClick] = useState(true);
-  const [selected, setSelected] = useState("Select");
-  // console.log(isClick)
-  let router = useRouter();
   let path = usePathname();
-  console.log(path)
   useEffect(()=>{
     if(window.innerWidth < 991){
       setIsClick(false)
@@ -48,7 +42,7 @@ const FinalDropDown = () => {
   ];
 
   return (
-    <div className="w-full lg:w-56 h-fit pt-1 px-0 pb-2 shadow-xx sm:shadow-none rounded-lg order-1 sm:order-2">
+    <div className="w-full lg:w-56 h-fit pt-1 px-0 pb-2 shadow-xx lg:shadow-none rounded-lg order-1 sm:order-2">
       <div className="w-full flex flex-col relative">
         <div
           className={`absolute top-2 right-2 ${

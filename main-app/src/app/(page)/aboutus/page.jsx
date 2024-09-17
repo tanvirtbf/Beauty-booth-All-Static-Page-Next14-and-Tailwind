@@ -1,6 +1,7 @@
 import FinalDropDown from "@/components/FinalDropDown";
 import Image from "next/image";
-import AboutUsBanner from "../../../../public/AboutUsBanner.png";
+import AboutUsWebBanner from "../../../../public/AboutUsWebBanner.png";
+import AboutUsMobileBanner from "../../../../public/AboutUsMobileBanner.png";
 
 const AboutUs = () => {
   return (
@@ -8,7 +9,8 @@ const AboutUs = () => {
       <div className="w-full flex flex-wrap justify-between">
         <div className="w-full flex flex-col gap-6 order-2 sm:order-1 mt-7 mb-6">
           <h1 className="staticHeading">About Us</h1>
-          <Image src={AboutUsBanner} alt="About us Banner" priority />
+          <Image src={AboutUsWebBanner} alt="About us Banner" priority className="w-full hidden sm:block" />
+          <Image src={AboutUsMobileBanner} alt="About us Banner" priority className="w-full block sm:hidden"  />
         </div>
         <FinalDropDown />
         <div className="w-full sm:w-3/4 order-3">
