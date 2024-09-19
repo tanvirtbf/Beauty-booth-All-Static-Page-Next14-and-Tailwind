@@ -69,7 +69,7 @@ const FinalDropDown = () => {
               <Link
                 key={id}
                 href={href}
-                className={`text-sm px-2 w-full h-9 flex items-center cursor-pointer dropgap ${
+                className={`text-sm px-2 sm:w-full w-[97%]  h-9 flex items-center cursor-pointer dropgap ${
                   path.split('/')[1]==href? "dropBg" : ""
                 }`}
               >

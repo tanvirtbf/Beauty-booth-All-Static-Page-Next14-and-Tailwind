@@ -32,6 +32,6 @@
     @apply font-normal sm:text-sm text-xs text-[#717171]
   }
   .shadow-xx{
-    box-shadow: 0px 2px 2px 0 #0f1c3320 ;
+    box-shadow: 0px 2px 4px 0 #0f1c3320 ;
   }
 }
