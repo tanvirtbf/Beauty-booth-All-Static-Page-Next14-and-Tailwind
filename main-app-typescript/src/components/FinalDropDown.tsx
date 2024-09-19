@@ -50,7 +50,7 @@ const FinalDropDown = () => {
   ];
 
   return (
-    <div className="w-full lg:w-56 h-fit pt-1 px-0 pb-2 shadow-xx lg:shadow-none rounded-lg order-1 sm:order-2">
+    <div className="w-full lg:w-56 h-fit pt-1 px-0 pb-2 pl-2 lg:pl-0 shadow-xx lg:shadow-none rounded-lg order-1 lg:order-2">
       <div className="w-full flex flex-col relative">
         <div
           className={`absolute top-2 right-2 ${
@@ -69,7 +69,7 @@ const FinalDropDown = () => {
               <Link
                 key={id}
                 href={href}
-                className={`text-sm px-2 sm:w-full w-[97%]  h-9 flex items-center cursor-pointer dropgap ${
+                className={`text-sm px-2 lg:w-full w-[97%]  h-9 flex items-center cursor-pointer dropgap ${
                   path.split('/')[1]==href? "dropBg" : ""
                 }`}
               >

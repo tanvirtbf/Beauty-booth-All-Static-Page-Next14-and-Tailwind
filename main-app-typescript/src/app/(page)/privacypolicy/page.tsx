@@ -1,17 +1,27 @@
 import FinalDropDown from "@/components/FinalDropDown";
 import Image from "next/image";
-import PrivacyPolicyWebBanner from "../../../../public/privacyPolicyWebBanner.png";
 import PrivacyPolicyMobileBanner from "../../../../public/privacyPolicyMobileBanner.png";
+import PrivacyPolicyWebBanner from "../../../../public/privacyPolicyWebBanner.png";
 
 const PrivacyPolicies = () => {
   return (
     <div className="container">
       <div className="w-full flex flex-wrap justify-between">
-      <div className="w-full flex flex-col gap-6 order-2 sm:order-1 mt-7 mb-6">
-      <h1 className="staticHeading">Privacy Policy</h1>
-          <Image src={PrivacyPolicyWebBanner} alt="Privacy Banner" priority className="w-full hidden sm:block"/>
-          <Image src={PrivacyPolicyMobileBanner} alt="Privacy Banner" priority className="w-full block sm:hidden" />
-        </div> 
+        <div className="w-full flex flex-col gap-6 order-2 lg:order-1 mt-7 mb-6">
+          <h1 className="staticHeading">Privacy Policy</h1>
+          <Image
+            src={PrivacyPolicyWebBanner}
+            alt="Privacy Banner"
+            priority
+            className="w-full hidden sm:block"
+          />
+          <Image
+            src={PrivacyPolicyMobileBanner}
+            alt="Privacy Banner"
+            priority
+            className="w-full block sm:hidden"
+          />
+        </div>
         <FinalDropDown />
         <div className="w-full sm:w-3/4 order-3">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
