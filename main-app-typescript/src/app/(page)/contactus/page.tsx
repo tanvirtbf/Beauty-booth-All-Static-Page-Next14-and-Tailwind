@@ -17,6 +17,16 @@ import WebWhatsappIcon from "../../../../public/WebWhatsappIcon.svg";
 
 const Contactus = () => {
 
+  const [formData,setFormData] = useState({
+    fullName : "", 
+    queryTitle : "",
+    mobileNumber : "",
+    mailAddress: "",
+    message:"",
+  })
+
+  console.log(formData)
+
   const [storeClick, setStoreClick] = useState(1);
   const store = [
     {
@@ -136,7 +146,6 @@ const Contactus = () => {
               Mail us your Query
             </h2>
             <form
-              action=""
               className="max-w-[540px] flex flex-col gap-4 sm:gap-6 mt-4 py-5 px-4 sm:px-0 sm:py-8  m-auto"
             >
               <div className="flex flex-col gap-2">
@@ -151,25 +160,29 @@ const Contactus = () => {
                   id="fullName"
                   className="px-4 py-3 border border-[#DDDDDD] rounded-2xl sm:rounded-xl outline-none placeholderCss"
                   placeholder="full name"
+                  value={formData.fullName}
+                  onChange={(e)=> setFormData((prevState)=> ({...prevState, fullName: e.target.value}))}
                 />
               </div>
               <div className="flex flex-col gap-2">
                 <label
-                  htmlFor="fullName"
+                  htmlFor="queryTitle"
                   className="font-medium text-xs sm:text-sm text-[#717171]"
                 >
                   Query Title
                 </label>
                 <input
                   type="text"
-                  id="fullName"
+                  id="queryTitle"
                   className="px-4 py-3 border border-[#DDDDDD] rounded-2xl sm:rounded-xl outline-none placeholderCss"
                   placeholder="what you want to know"
+                  value={formData.queryTitle}
+                  onChange={(e)=> setFormData((prevState)=>({...prevState, queryTitle:e.target.value}))}
                 />
               </div>
               <div className="flex flex-col gap-2">
                 <label
-                  htmlFor="fullName"
+                  htmlFor="mobileNumber"
                   className="font-medium text-xs sm:text-sm text-[#717171]"
                 >
                   Mobile Number
@@ -177,27 +190,29 @@ const Contactus = () => {
                 <div className="w-full flex gap-3 px-4 py-3 border border-[#DDDDDD] rounded-2xl sm:rounded-xl items-center">
                   <div className="font-normal text-xs sm:text-sm text-[#717171]">+974</div>
                   <div className="">
-                    <input type="text" id="fullName" className="w-full outline-none placeholderCss border-none" placeholder="XXXXXXXX"/>
+                    <input type="number" id="mobileNumber" className="w-full outline-none placeholderCss border-none" placeholder="XXXXXXXX" value={formData.mobileNumber} onChange={(e)=> setFormData((prevState)=>({...prevState, mobileNumber:e.target.value}))}/>
                   </div>
                 </div>
               </div>
               <div className="flex flex-col gap-2">
                 <label
-                  htmlFor="fullName"
+                  htmlFor="mailAddress"
                   className="font-medium text-xs sm:text-sm text-[#717171]"
                 >
                   Mail address
                 </label>
                 <input
-                  type="text"
-                  id="fullName"
+                  type="email"
+                  id="mailAddress"
                   className="px-4 py-3 border border-[#DDDDDD] rounded-2xl sm:rounded-xl outline-none placeholderCss"
                   placeholder="enter email"
+                  value={formData.mailAddress}
+                  onChange={(e)=> setFormData((prevState)=> ({...prevState, mailAddress: e.target.value}))}
                 />
               </div>
               <div className="flex flex-col gap-2">
                 <label
-                  htmlFor="fullName"
+                  htmlFor="message"
                   className="font-medium text-xs sm:text-sm text-[#717171]"
                 >
                   Your Message
@@ -205,9 +220,11 @@ const Contactus = () => {
                 <textarea
                   rows={4}
                   // type="text"
-                  id="fullName"
+                  id="message"
                   className="px-4 py-3 border border-[#DDDDDD] rounded-2xl sm:rounded-xl outline-none placeholderCss"
                   placeholder="your message here..."
+                  value={formData.message}
+                  onChange={(e)=> setFormData((prevState)=> ({...prevState, message: e.target.value}))}
                 />
               </div>
               <div className="w-full flex gap-3 sm:gap-4">
